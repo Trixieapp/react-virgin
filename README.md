@@ -8,7 +8,7 @@ Trixie is meditation app chatbot - http://thetrixieapp.com
 
 How to use - 
 
-Clone the repo 
+Clone the repo
 Run npm install
 Run react-native run-ios for iOS
 Run react-native run-android for Android
