@@ -21,6 +21,7 @@ import PillPrimary from '../components/pillPrimary';
 import ChatBubble from '../components/chatBubble';
 import GridItem from '../components/gridItem';
 import BottomNav from '../components/bottomNav';
+import InputField from '../components/input';
 let globalStyle = require('./style/style');
 class Menu2 extends Component {
   constructor(props){
@@ -87,6 +88,9 @@ class Menu2 extends Component {
                   <ChatBubble text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum, leo sed pharetra convallis, arcu elit tristique sem, quis ultrices nibh velit sed ante" />
                 </View>
 
+               <Text style={globalStyle.nameLeft}>Input</Text>
+
+              <InputField placeholder="placeholder text" />
               <Text style={globalStyle.nameLeft}>Grid</Text>
 
 

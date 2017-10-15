@@ -5,6 +5,7 @@ import React, {
 import ReactNative, {
   Image,
   Text,
+  TextInput,
   BackHandler,
   TouchableHighlight,
   View
@@ -13,20 +14,20 @@ import ReactNative, {
 
 var componentStyle = require('./style/component');
 
-class PillPrimary extends Component {
+class InputField extends Component {
   static propTypes = {
     // text: React.PropTypes.string.isRequired,
   }
   render = () => {
-    var text = this.props.text;
+    var placeholder = this.props.placeholder;
     return(
-      <TouchableHighlight style={[componentStyle.actionButton,componentStyle.mt10]} underlayColor='#f1f1f1'>
-        <View>
-          <Text style= {componentStyle.actionButtonText}>{text}</Text>
-        </View>
-      </TouchableHighlight>
+      <TextInput
+        underlineColorAndroid='rgba(0,0,0,0)'
+        style={componentStyle.input}
+        placeholder={placeholder}>
+      </TextInput>
     );
   }
 }
 
-export default PillPrimary
+export default InputField
