@@ -11,16 +11,24 @@ import ReactNative, {
 } from 'react-native';
 
 
-var componentStyle = require('./style/component');
+import componentStyle from './style/component';
 
 class ButtonBordered extends Component {
-  static propTypes = {
-    // text: React.PropTypes.string.isRequired,
+  propTypes: {
+    text: PropTypes.string,
   }
+
+  defaultProps: {
+    text: ''
+  }
+
   render = () => {
     const { text } = this.props;
     return (
-      <TouchableHighlight style={componentStyle.buttonBordered} underlayColor='#f1f1f1'>
+      <TouchableHighlight
+        style={componentStyle.buttonBordered}
+        underlayColor='#f1f1f1'
+      >
         <View>
           <Text style={componentStyle.buttonBorderedText}> {text} </Text>
         </View>

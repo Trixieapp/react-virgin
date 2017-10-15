@@ -1,7 +1,8 @@
 import ReactNative, {
   Platform
 } from 'react-native';
-if(Platform.OS === 'ios') {
+
+if (Platform.OS === 'ios') {
   global.headerFontSize = 22;
   global.extraMarginValue = 30;
   global.buttonPrimaryTextPadding = 5;

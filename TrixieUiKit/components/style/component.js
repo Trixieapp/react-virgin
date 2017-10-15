@@ -1,5 +1,3 @@
-
-
 import {
   StyleSheet,
   Dimensions,
@@ -22,8 +20,7 @@ const {
   buttonPrimaryTextPadding, buttonBorderedTextPadding,
 } = global;
 
-module.exports = StyleSheet.create({
-
+export default StyleSheet.create({
 
   buttonPrimary: {
     width: 270,
@@ -283,7 +280,6 @@ module.exports = StyleSheet.create({
     flexDirection: 'row',
     paddingTop: 10,
     flexWrap: 'wrap',
-
   },
   actionButton: {
     backgroundColor: primaryRed,
@@ -298,6 +294,5 @@ module.exports = StyleSheet.create({
     fontSize: 12,
     alignSelf: 'center',
   },
-
 
 });

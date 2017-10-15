@@ -21,7 +21,9 @@ import PillPrimary from '../components/pillPrimary';
 import ChatBubble from '../components/chatBubble';
 import GridItem from '../components/gridItem';
 import BottomNav from '../components/bottomNav';
-let globalStyle = require('./style/style');
+
+import globalStyle from './style/style';
+
 class Menu2 extends Component {
   constructor(props){
     super(props);
@@ -33,7 +35,7 @@ class Menu2 extends Component {
     header: null,
   };
 
-  handleBack(){
+  handleBack = () => {
     const { goBack } = this.props.navigation;
     goBack(this.props.navigation.state.key);
   }
@@ -49,11 +51,7 @@ class Menu2 extends Component {
     navigate(routeName)
   }
 
-  componentWillMount() {
-
-  }
-
-  render() {
+  render = () => {
 
       return(
         <View style={globalStyle.container}>
