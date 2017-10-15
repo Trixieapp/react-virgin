@@ -16,6 +16,7 @@ import backAndroid, {
 } from 'react-native-back-android';
 import LinearGradient from 'react-native-linear-gradient';
 var globalStyle = require('./style/style');
+import BottomNav from '../components/bottomNav';
 class Home extends Component {
   constructor(props){
     super(props);
@@ -117,32 +118,7 @@ class Home extends Component {
               {this.showVerticalList()}
             </View>
           </ScrollView>
-          <View style={globalStyle.footerWrapper}>
-            <TouchableHighlight style={globalStyle.footer} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/play-button-selected.png')}/>
-                <Text style={globalStyle.footerText,globalStyle.selected} > Menu1 </Text>
-              </View>
-            </TouchableHighlight>
-            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu2');}} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/settings.png')} />
-                <Text style={globalStyle.footerText} > Menu2 </Text>
-              </View>
-            </TouchableHighlight>
-            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu3');}} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/user.png')} />
-                <Text style={globalStyle.footerText} > Menu3 </Text>
-              </View>
-            </TouchableHighlight>
-            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu4');}} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/settings.png')} />
-                <Text style={globalStyle.footerText} > Menu4 </Text>
-              </View>
-            </TouchableHighlight>
-          </View>
+          <BottomNav activeTab = "home" parentthis={this}/>
         </View>
       );
     }

@@ -14,6 +14,7 @@ import backAndroid, {
   exitApp
 } from 'react-native-back-android';
 import LinearGradient from 'react-native-linear-gradient';
+import BottomNav from '../components/bottomNav';
 var globalStyle = require('./style/style');
 class Menu4 extends Component {
   constructor(props){
@@ -56,32 +57,7 @@ class Menu4 extends Component {
             </View>
           </LinearGradient>
           </ScrollView>
-          <View style={globalStyle.footerWrapper}>
-            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('home');}} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/play-button-small.png')}/>
-                <Text style={globalStyle.footerText} > Menu1 </Text>
-              </View>
-            </TouchableHighlight>
-            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu2');}} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/settings.png')} />
-                <Text style={globalStyle.footerText} > Menu2 </Text>
-              </View>
-            </TouchableHighlight>
-            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu3');}} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/user.png')} />
-                <Text style={globalStyle.footerText} > Menu3 </Text>
-              </View>
-            </TouchableHighlight>
-            <TouchableHighlight style={globalStyle.footer} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/settings-selected.png')} />
-                <Text style={[globalStyle.footerText,globalStyle.selected]} > Menu4 </Text>
-              </View>
-            </TouchableHighlight>
-          </View>
+          <BottomNav activeTab = "Menu4" parentthis={this}/>
         </View>
       );
     }

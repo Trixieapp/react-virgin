@@ -80,7 +80,7 @@ class Menu2 extends Component {
                 <Pills text="Pill button"/>
                 <PillPrimary text="Pill button"/>
 
-              
+
               </View>
                 <Text style={globalStyle.nameLeft}>Conversation</Text>
                 <View style={globalStyle.centreItems} >
@@ -99,7 +99,7 @@ class Menu2 extends Component {
 
             </View>
           </ScrollView>
-           <BottomNav activeTab = "Menu2"/>
+           <BottomNav activeTab = "Menu2" parentthis={this}/>
         </View>
       );
     }
