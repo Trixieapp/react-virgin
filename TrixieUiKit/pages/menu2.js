@@ -14,6 +14,8 @@ import backAndroid, {
   exitApp
 } from 'react-native-back-android';
 import LinearGradient from 'react-native-linear-gradient';
+import ButtonBordered from '../components/buttonBordered';
+import ButtonPrimary from '../components/buttonPrimary';
 var globalStyle = require('./style/style');
 class Menu2 extends Component {
   constructor(props){
@@ -59,22 +61,13 @@ class Menu2 extends Component {
 
              <View style={[globalStyle.profileCard,globalStyle.padding20]}>
                 <Text style={[globalStyle.label]}> List of all componenets used </Text>
-
               </View>
+
+
                 <Text style={globalStyle.nameLeft}>Buttons</Text>
 
-                <TouchableHighlight style={globalStyle.buttonBordered} onPress={() => {this.monthlyPayment();}} underlayColor='#f1f1f1'>
-                  <View >
-                    <Text style={globalStyle.buttonBorderedText}> Bordered button </Text>
-                  </View>
-                </TouchableHighlight>
-
-
-                <TouchableHighlight style={globalStyle.buttonPrimary} onPress={() => {this.yearlyPayment();}} underlayColor='#f1f1f1'>
-                <View >
-                  <Text style={globalStyle.buttonPrimaryText}> Button primary </Text>
-                </View>
-              </TouchableHighlight>
+               <ButtonBordered text = "Secondary Button"/>
+               <ButtonPrimary text="Primary Button"/>
 
               <Text style={globalStyle.nameLeft}>Small buttons</Text>
               <View style={globalStyle.centreItems} >
