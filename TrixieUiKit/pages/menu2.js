@@ -77,7 +77,7 @@ class Menu2 extends Component {
               </TouchableHighlight>
 
               <Text style={globalStyle.nameLeft}>Small buttons</Text>
-
+              <View style={globalStyle.centreItems} >
               <TouchableHighlight >
                 <View style={globalStyle.pills}>
                   <Text style={globalStyle.pillText}>
@@ -91,13 +91,14 @@ class Menu2 extends Component {
                   <Text style= {globalStyle.actionButtonText}>Small button</Text>
                 </View>
                 </TouchableHighlight>
-
+                </View>
                 <Text style={globalStyle.nameLeft}>Conversation</Text>
-
+                <View style={globalStyle.centreItems} >
               <View style={[globalStyle.conversationContainer,globalStyle.shadow]}>
                <Text style= {globalStyle.conversationText}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum, leo sed pharetra convallis, arcu elit tristique sem, quis ultrices nibh velit sed ante.
                 </Text>
+              </View>
               </View>
 
               <Text style={globalStyle.nameLeft}>Grid</Text>

@@ -78,7 +78,7 @@ class Home extends Component {
       <TouchableHighlight style={globalStyle.listItem} underlayColor='#f1f1f1'>
         <View>
           <View style={globalStyle.row}>
-            <Image style={globalStyle.thumb} source={require('../Thumbnails/settings.png')}/>
+            <Image style={globalStyle.thumb} source={require('../Thumbnails/logo.png')}/>
             <View style={globalStyle.text}>
               <Text style={[globalStyle.name]}>
                 {name}
@@ -95,7 +95,7 @@ class Home extends Component {
     return (
       <TouchableHighlight underlayColor='#f1f1f1'>
           <View style={globalStyle.padding10}>
-            <Image style={globalStyle.recentlyPlayedThumb} source={require('../Thumbnails/settings.png')}/>
+            <Image style={globalStyle.recentlyPlayedThumb} source={require('../Thumbnails/logo.png')}/>
             <Text style={[globalStyle.smallText,globalStyle.strong]}> { ((name).length > 14) ? (((name).substring(0,11)) + '...') : name }</Text>
           </View>
       </TouchableHighlight>
@@ -113,6 +113,7 @@ class Home extends Component {
             </LinearGradient>
             <View style={globalStyle.marginTopValue}>
               {this.showHorizontalList()}
+              <Text style={globalStyle.nameLeft}>Veritcal List</Text>
               {this.showVerticalList()}
             </View>
           </ScrollView>
