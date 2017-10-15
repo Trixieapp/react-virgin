@@ -55,7 +55,7 @@ class Menu2 extends Component {
               <Text style={globalStyle.title}> Components </Text>
             </View>
           </LinearGradient>
-           <View style={[globalStyle.marginTopValue,globalStyle.padding20]}>
+           <View style={[globalStyle.marginTopValue]}>
               
              <View style={[globalStyle.profileCard,globalStyle.padding20]}>
                 <Text style={[globalStyle.label]}> List of all componenets used </Text>
@@ -75,6 +75,8 @@ class Menu2 extends Component {
                   <Text style={globalStyle.buttonPrimaryText}> Button primary </Text>
                 </View>
               </TouchableHighlight>
+
+              <Text style={globalStyle.nameLeft}>Small buttons</Text>
 
               <TouchableHighlight >
                 <View style={globalStyle.pills}>
@@ -98,6 +100,25 @@ class Menu2 extends Component {
                 </Text>
               </View>
 
+              <Text style={globalStyle.nameLeft}>Grid</Text>
+              <View style={globalStyle.profileMetricsContainer}>
+              <View style={[globalStyle.profileMetrics,globalStyle.shadow]}>
+                  <Text  style = {globalStyle.profileValues}> 25  </Text>
+                  <Text style={[globalStyle.label,globalStyle.strong,globalStyle.smallText]}> title</Text>
+                </View>
+                 <View style={[globalStyle.profileMetrics,globalStyle.shadow]}>
+                  <Text  style = {globalStyle.profileValues}> 25  </Text>
+                  <Text style={[globalStyle.label,globalStyle.strong,globalStyle.smallText]}> title</Text>
+                </View>
+                 <View style={[globalStyle.profileMetrics,globalStyle.shadow]}>
+                  <Text  style = {globalStyle.profileValues}> 25  </Text>
+                  <Text style={[globalStyle.label,globalStyle.strong,globalStyle.smallText]}> title</Text>
+                </View>
+                 <View style={[globalStyle.profileMetrics,globalStyle.shadow]}>
+                  <Text  style = {globalStyle.profileValues}> 25  </Text>
+                  <Text style={[globalStyle.label,globalStyle.strong,globalStyle.smallText]}> title</Text>
+                </View>
+              </View>
 
              
              
