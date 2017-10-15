@@ -55,24 +55,25 @@ class Menu3 extends Component {
               <Text style={globalStyle.title}> Header 3 </Text>
             </View>
           </LinearGradient>
+
           </ScrollView>
           <View style={globalStyle.footerWrapper}>
             <TouchableHighlight style={globalStyle.footer} underlayColor='#f1f1f1'>
               <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/play-button-selected.png')}/>
-                <Text style={globalStyle.footerText,globalStyle.selected} > Menu1 </Text>
+                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/play-button-small.png')}/>
+                <Text style={globalStyle.footerText} > Menu1 </Text>
               </View>
             </TouchableHighlight>
             <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu2');}} underlayColor='#f1f1f1'>
               <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/breathe-grey.png')} />
+                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/settings.png')} />
                 <Text style={globalStyle.footerText} > Menu2 </Text>
               </View>
             </TouchableHighlight>
             <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu3');}} underlayColor='#f1f1f1'>
               <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/user.png')} />
-                <Text style={globalStyle.footerText} > Menu3 </Text>
+                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/user-selected.png')} />
+                <Text style={[globalStyle.footerText,globalStyle.selected]} > Menu3 </Text>
               </View>
             </TouchableHighlight>
             <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu4');}} underlayColor='#f1f1f1'>

@@ -55,6 +55,7 @@ class Home extends Component {
               <Text style={globalStyle.title}> Header 1 </Text>
             </View>
           </LinearGradient>
+
           </ScrollView>
           <View style={globalStyle.footerWrapper}>
             <TouchableHighlight style={globalStyle.footer} underlayColor='#f1f1f1'>
@@ -65,7 +66,7 @@ class Home extends Component {
             </TouchableHighlight>
             <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu2');}} underlayColor='#f1f1f1'>
               <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/breathe-grey.png')} />
+                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/settings.png')} />
                 <Text style={globalStyle.footerText} > Menu2 </Text>
               </View>
             </TouchableHighlight>
