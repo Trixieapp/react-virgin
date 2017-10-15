@@ -18,8 +18,7 @@ class GridItem extends Component {
     // text: React.PropTypes.string.isRequired,
   }
   render = () => {
-    var value = this.props.value;
-    var title = this.props.title;
+    const { title, value } = this.props;
     return(
       <View style={[componentStyle.profileMetrics,componentStyle.shadow]}>
         <Text  style = {componentStyle.profileValues}> {value} </Text>

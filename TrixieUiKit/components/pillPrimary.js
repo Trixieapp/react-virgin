@@ -18,7 +18,7 @@ class PillPrimary extends Component {
     // text: React.PropTypes.string.isRequired,
   }
   render = () => {
-    var text = this.props.text;
+    const { text } = this.props;
     return(
       <TouchableHighlight style={[componentStyle.actionButton,componentStyle.mt10]} underlayColor='#f1f1f1'>
         <View>

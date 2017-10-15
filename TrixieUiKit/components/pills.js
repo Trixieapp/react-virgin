@@ -18,7 +18,7 @@ class Pills extends Component {
     // text: React.PropTypes.string.isRequired,
   }
   render = () => {
-    var text = this.props.text;
+    const { text } = this.props;
     return(
       <TouchableHighlight >
         <View style={componentStyle.pills}>

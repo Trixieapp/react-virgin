@@ -18,7 +18,7 @@ class ButtonPrimary extends Component {
     // text: React.PropTypes.string.isRequired,
   }
   render = () => {
-    var text = this.props.text;
+    const { text } = this.props;
     return(
     <TouchableHighlight style={componentStyle.buttonPrimary} underlayColor='#f1f1f1'>
       <View >
