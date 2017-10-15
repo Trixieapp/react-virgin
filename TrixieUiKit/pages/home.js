@@ -1,4 +1,4 @@
-'use strict';
+
 import React, {
   Component
 } from 'react';
@@ -15,7 +15,7 @@ import backAndroid, {
   exitApp
 } from 'react-native-back-android';
 import LinearGradient from 'react-native-linear-gradient';
-var globalStyle = require('./style/style');
+let globalStyle = require('./style/style');
 import BottomNav from '../components/bottomNav';
 class Home extends Component {
   constructor(props){
@@ -74,7 +74,7 @@ class Home extends Component {
   }
 
   renderRow(rowData: string, sectionID: number, rowID: number) {
-    var name = rowData;
+    let name = rowData;
     return (
       <TouchableHighlight style={globalStyle.listItem} underlayColor='#f1f1f1'>
         <View>
@@ -92,7 +92,7 @@ class Home extends Component {
   }
 
   renderListRow(rowData: string, sectionID: number, rowID: number) {
-    var name = rowData;
+    let name = rowData;
     return (
       <TouchableHighlight underlayColor='#f1f1f1'>
           <View style={globalStyle.padding10}>

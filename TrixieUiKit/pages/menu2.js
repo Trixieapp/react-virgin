@@ -1,4 +1,4 @@
-'use strict';
+
 import React, {
   Component
 } from 'react';
@@ -21,7 +21,7 @@ import PillPrimary from '../components/pillPrimary';
 import ChatBubble from '../components/chatBubble';
 import GridItem from '../components/gridItem';
 import BottomNav from '../components/bottomNav';
-var globalStyle = require('./style/style');
+let globalStyle = require('./style/style');
 class Menu2 extends Component {
   constructor(props){
     super(props);

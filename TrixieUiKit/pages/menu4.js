@@ -1,4 +1,4 @@
-'use strict';
+
 import React, {
   Component
 } from 'react';
@@ -15,7 +15,7 @@ import backAndroid, {
 } from 'react-native-back-android';
 import LinearGradient from 'react-native-linear-gradient';
 import BottomNav from '../components/bottomNav';
-var globalStyle = require('./style/style');
+let globalStyle = require('./style/style');
 class Menu4 extends Component {
   constructor(props){
     super(props);
