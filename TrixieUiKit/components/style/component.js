@@ -294,8 +294,8 @@ export default StyleSheet.create({
     fontSize: 12,
     alignSelf: 'center',
   },
-  input: {
-    backgroundColor: '#fff',
+  inputField: {
+    backgroundColor: 'white',
     color: primaryBlue,
     height: 50,
     width: 270,

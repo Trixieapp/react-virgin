@@ -12,18 +12,22 @@ import ReactNative, {
 } from 'react-native';
 
 
-var componentStyle = require('./style/component');
+import componentStyle from './style/component';
 
 class InputField extends Component {
-  static propTypes = {
-    // text: React.PropTypes.string.isRequired,
+  propTypes: {
+    placeholder: PropTypes.string
+  }
+
+  defaultProps: {
+    placeholder: '',
   }
   render = () => {
-    var placeholder = this.props.placeholder;
+    const { placeholder } = this.props;
     return(
       <TextInput
         underlineColorAndroid='rgba(0,0,0,0)'
-        style={componentStyle.input}
+        style={[componentStyle.inputField,componentStyle.shadow]}
         placeholder={placeholder}>
       </TextInput>
     );

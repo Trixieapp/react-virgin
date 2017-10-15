@@ -85,8 +85,8 @@ class Menu2 extends Component {
                 </View>
 
                <Text style={globalStyle.nameLeft}>Input</Text>
+               <InputField placeholder="placeholder text" />
 
-              <InputField placeholder="placeholder text" />
               <Text style={globalStyle.nameLeft}>Grid</Text>
 
 
