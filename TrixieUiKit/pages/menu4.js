@@ -14,20 +14,21 @@ import backAndroid, {
   exitApp
 } from 'react-native-back-android';
 import LinearGradient from 'react-native-linear-gradient';
+
 import BottomNav from '../components/bottomNav';
-let globalStyle = require('./style/style');
+import globalStyle from './style/style';
+
 class Menu4 extends Component {
   constructor(props){
     super(props);
     this.handleBack = this.handleBack.bind(this);
-    this.state = {
-    }
+    this.state = {};
   }
   static navigationOptions = {
     header: null,
   };
 
-  handleBack(){
+  handleBack = () => {
     const { goBack } = this.props.navigation;
     goBack(this.props.navigation.state.key);
   }
@@ -41,10 +42,6 @@ class Menu4 extends Component {
   redirect = (routeName) => {
     const { navigate } = this.props.navigation;
     navigate(routeName)
-  }
-
-  componentWillMount() {
-
   }
 
   render() {

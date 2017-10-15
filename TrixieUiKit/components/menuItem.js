@@ -9,7 +9,8 @@ import ReactNative, {
   TouchableHighlight,
   View
 } from 'react-native';
-const componentStyle = require('./style/component');
+
+import componentStyle from './style/component'
 
 export default class MenuItem extends PureComponent {
   propTypes: {
@@ -37,7 +38,7 @@ export default class MenuItem extends PureComponent {
           style={componentStyle.footerIcons}
           source={selected ? selectionImage : image}
         />
-        <Text style={componentStyle.footerText} >
+        <Text style={componentStyle.footerText}>
           {text}
         </Text>
       </View>

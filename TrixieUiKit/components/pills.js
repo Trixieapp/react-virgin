@@ -14,13 +14,18 @@ import ReactNative, {
 var componentStyle = require('./style/component');
 
 class Pills extends Component {
-  static propTypes = {
-    // text: React.PropTypes.string.isRequired,
+  propTypes: {
+    text: PropTypes.string,
+    onPress: PropTypes.func,
+  }
+  defaultProps: {
+    text: '',
+    onPress: () => {}
   }
   render = () => {
-    const { text } = this.props;
+    const { text, onPress } = this.props;
     return(
-      <TouchableHighlight >
+      <TouchableHighlight onPress={onPress}>
         <View style={componentStyle.pills}>
           <Text style={componentStyle.pillText}>
             {text}

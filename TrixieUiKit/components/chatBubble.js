@@ -11,15 +11,20 @@ import ReactNative, {
 } from 'react-native';
 
 
-var componentStyle = require('./style/component');
+import componentStyle from './style/component';
 
 class ChatBubble extends Component {
-  static propTypes = {
-    // text: React.PropTypes.string.isRequired,
+  propTypes: {
+    text: PropTypes.string,
   }
+
+  defaultProps: {
+    text: ''
+  }
+
   render = () => {
     const { text } = this.props;
-    return(
+    return (
       <View style={[componentStyle.conversationContainer,componentStyle.shadow]}>
        <Text style= {componentStyle.conversationText}>
         {text}

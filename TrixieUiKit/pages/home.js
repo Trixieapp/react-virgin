@@ -1,7 +1,7 @@
-
 import React, {
   Component
 } from 'react';
+
 import ReactNative, {
   Text,
   View,
@@ -10,13 +10,19 @@ import ReactNative, {
   ListView,
   TouchableHighlight
 } from 'react-native';
+
 import backAndroid, {
   hardwareBackPress,
   exitApp
 } from 'react-native-back-android';
+
 import LinearGradient from 'react-native-linear-gradient';
-let globalStyle = require('./style/style');
+
+import globalStyle from './style/style';
 import BottomNav from '../components/bottomNav';
+
+const createEllipses = (str) => str.length > 14 ? `${str.substring(0,11)}...` : str;
+
 class Home extends Component {
   constructor(props){
     super(props);
@@ -97,7 +103,10 @@ class Home extends Component {
       <TouchableHighlight underlayColor='#f1f1f1'>
           <View style={globalStyle.padding10}>
             <Image style={globalStyle.recentlyPlayedThumb} source={require('../Thumbnails/logo.png')}/>
-            <Text style={[globalStyle.smallText,globalStyle.strong]}> { ((name).length > 14) ? (((name).substring(0,11)) + '...') : name }</Text>
+            <Text
+              style={[globalStyle.smallText,globalStyle.strong]}>
+              { createEllipses(name) }
+            </Text>
           </View>
       </TouchableHighlight>
     );
@@ -114,7 +123,7 @@ class Home extends Component {
             </LinearGradient>
             <View style={globalStyle.marginTopValue}>
               {this.showHorizontalList()}
-              <Text style={globalStyle.nameLeft}>Veritcal List</Text>
+              <Text style={globalStyle.nameLeft}>Vertical List</Text>
               {this.showVerticalList()}
             </View>
           </ScrollView>

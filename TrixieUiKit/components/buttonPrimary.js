@@ -11,20 +11,28 @@ import ReactNative, {
 } from 'react-native';
 
 
-var componentStyle = require('./style/component');
+import componentStyle from './style/component';
 
 class ButtonPrimary extends Component {
-  static propTypes = {
-    // text: React.PropTypes.string.isRequired,
+  propTypes: {
+    text: PropTypes.string,
   }
+
+  defaultProps: {
+    text: ''
+  }
+
   render = () => {
     const { text } = this.props;
-    return(
-    <TouchableHighlight style={componentStyle.buttonPrimary} underlayColor='#f1f1f1'>
-      <View >
-        <Text style={componentStyle.buttonPrimaryText}> {text} </Text>
-      </View>
-    </TouchableHighlight>
+    return (
+      <TouchableHighlight
+        style={componentStyle.buttonPrimary}
+        underlayColor='#f1f1f1'
+      >
+        <View >
+          <Text style={componentStyle.buttonPrimaryText}> {text} </Text>
+        </View>
+      </TouchableHighlight>
     );
   }
 }

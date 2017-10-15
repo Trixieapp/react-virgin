@@ -7,7 +7,7 @@ import ReactNative, {
 } from 'react-native';
 import MenuItem from './menuItem';
 
-var componentStyle = require('./style/component');
+import componentStyle from './style/component';
 
 const tabList = [
   {
@@ -40,6 +40,16 @@ const tabList = [
   },
 ]
 class BottomNav extends Component {
+  propTypes: {
+    activeTab: PropTypes.string,
+    onTabPress: PropTypes.func,
+  }
+
+  defaultProps: {
+    activeTab: 'home',
+    onTabPress: () => {}
+  }
+
   renderTabs = (tab) => {
     const { activeTab, onTabPress } = this.props;
     return <MenuItem

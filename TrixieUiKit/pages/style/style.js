@@ -1,4 +1,3 @@
-
 import {
   StyleSheet,
   Dimensions,
@@ -7,7 +6,6 @@ import {
 function vw(percentageWidth) {
   return Dimensions.get('window').width * (percentageWidth / 100);
 }
-
 
 const COLUMNS = 2;
 const MARGIN = vw(1);
@@ -23,15 +21,12 @@ const primaryRed = '#FF758C';
 
 const { headerFontSize, extraMarginValue } = global;
 
-module.exports = StyleSheet.create({
+export default StyleSheet.create({
 
   container: {
     flex: 1,
     justifyContent: 'center',
     backgroundColor: backgroundPrimary,
-  },
-  scrollContainer: {
-
   },
   marginTopValue: {
     marginTop: 80,
