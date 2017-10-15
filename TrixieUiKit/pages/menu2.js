@@ -16,6 +16,10 @@ import backAndroid, {
 import LinearGradient from 'react-native-linear-gradient';
 import ButtonBordered from '../components/buttonBordered';
 import ButtonPrimary from '../components/buttonPrimary';
+import Pills from '../components/pills';
+import PillPrimary from '../components/pillPrimary';
+import ChatBubble from '../components/chatBubble';
+import GridItem from '../components/gridItem';
 var globalStyle = require('./style/style');
 class Menu2 extends Component {
   constructor(props){
@@ -49,6 +53,7 @@ class Menu2 extends Component {
   }
 
   render() {
+
       return(
         <View style={globalStyle.container}>
           <ScrollView style={globalStyle.scrollContainer}>
@@ -71,50 +76,25 @@ class Menu2 extends Component {
 
               <Text style={globalStyle.nameLeft}>Small buttons</Text>
               <View style={globalStyle.centreItems} >
-              <TouchableHighlight >
-                <View style={globalStyle.pills}>
-                  <Text style={globalStyle.pillText}>
-                    Small Button
-                  </Text>
-                </View>
-              </TouchableHighlight>
+                <Pills text="Pill button"/>
+                <PillPrimary text="Pill button"/>
 
-               <TouchableHighlight style={[globalStyle.actionButton,globalStyle.mt10]} underlayColor='#f1f1f1'>
-                <View>
-                  <Text style= {globalStyle.actionButtonText}>Small button</Text>
-                </View>
-                </TouchableHighlight>
-                </View>
+              
+              </View>
                 <Text style={globalStyle.nameLeft}>Conversation</Text>
                 <View style={globalStyle.centreItems} >
-              <View style={[globalStyle.conversationContainer,globalStyle.shadow]}>
-               <Text style= {globalStyle.conversationText}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum, leo sed pharetra convallis, arcu elit tristique sem, quis ultrices nibh velit sed ante.
-                </Text>
-              </View>
-              </View>
+                  <ChatBubble text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum, leo sed pharetra convallis, arcu elit tristique sem, quis ultrices nibh velit sed ante" />
+                </View>
 
               <Text style={globalStyle.nameLeft}>Grid</Text>
+
+
               <View style={globalStyle.profileMetricsContainer}>
-              <View style={[globalStyle.profileMetrics,globalStyle.shadow]}>
-                  <Text  style = {globalStyle.profileValues}> 25  </Text>
-                  <Text style={[globalStyle.label,globalStyle.strong,globalStyle.smallText]}> title</Text>
-                </View>
-                 <View style={[globalStyle.profileMetrics,globalStyle.shadow]}>
-                  <Text  style = {globalStyle.profileValues}> 25  </Text>
-                  <Text style={[globalStyle.label,globalStyle.strong,globalStyle.smallText]}> title</Text>
-                </View>
-                 <View style={[globalStyle.profileMetrics,globalStyle.shadow]}>
-                  <Text  style = {globalStyle.profileValues}> 25  </Text>
-                  <Text style={[globalStyle.label,globalStyle.strong,globalStyle.smallText]}> title</Text>
-                </View>
-                 <View style={[globalStyle.profileMetrics,globalStyle.shadow]}>
-                  <Text  style = {globalStyle.profileValues}> 25  </Text>
-                  <Text style={[globalStyle.label,globalStyle.strong,globalStyle.smallText]}> title</Text>
-                </View>
+                 <GridItem value="25" title = "Title" />
+                 <GridItem value="35" title = "Title" />
+                 <GridItem value="45" title = "Title" />
+                 <GridItem value="55" title = "Title" />
               </View>
-
-
 
             </View>
           </ScrollView>
@@ -128,19 +108,19 @@ class Menu2 extends Component {
             <TouchableHighlight style={globalStyle.footer} underlayColor='#f1f1f1'>
               <View>
                 <Image style={globalStyle.footerIcons} source={require('../Thumbnails/settings-selected.png')} />
-                <Text style={[globalStyle.footerText,globalStyle.selected]} > Menu2 </Text>
+                <Text style={[globalStyle.footerText,globalStyle.selected]} > Menu 2 </Text>
               </View>
             </TouchableHighlight>
             <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu3');}} underlayColor='#f1f1f1'>
               <View>
                 <Image style={globalStyle.footerIcons} source={require('../Thumbnails/user.png')} />
-                <Text style={globalStyle.footerText} > Menu3 </Text>
+                <Text style={globalStyle.footerText} > Menu 3 </Text>
               </View>
             </TouchableHighlight>
             <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu4');}} underlayColor='#f1f1f1'>
               <View>
                 <Image style={globalStyle.footerIcons} source={require('../Thumbnails/settings.png')} />
-                <Text style={globalStyle.footerText} > Menu4 </Text>
+                <Text style={globalStyle.footerText} > Menu 4 </Text>
               </View>
             </TouchableHighlight>
           </View>
