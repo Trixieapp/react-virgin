@@ -58,7 +58,7 @@ class Menu3 extends Component {
 
           </ScrollView>
           <View style={globalStyle.footerWrapper}>
-            <TouchableHighlight style={globalStyle.footer} underlayColor='#f1f1f1'>
+            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('home');}} underlayColor='#f1f1f1'>
               <View>
                 <Image style={globalStyle.footerIcons} source={require('../Thumbnails/play-button-small.png')}/>
                 <Text style={globalStyle.footerText} > Menu1 </Text>
@@ -70,7 +70,7 @@ class Menu3 extends Component {
                 <Text style={globalStyle.footerText} > Menu2 </Text>
               </View>
             </TouchableHighlight>
-            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu3');}} underlayColor='#f1f1f1'>
+            <TouchableHighlight style={globalStyle.footer} underlayColor='#f1f1f1'>
               <View>
                 <Image style={globalStyle.footerIcons} source={require('../Thumbnails/user-selected.png')} />
                 <Text style={[globalStyle.footerText,globalStyle.selected]} > Menu3 </Text>

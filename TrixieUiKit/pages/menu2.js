@@ -56,10 +56,10 @@ class Menu2 extends Component {
             </View>
           </LinearGradient>
            <View style={[globalStyle.marginTopValue]}>
-              
+
              <View style={[globalStyle.profileCard,globalStyle.padding20]}>
                 <Text style={[globalStyle.label]}> List of all componenets used </Text>
-                 
+
               </View>
                 <Text style={globalStyle.nameLeft}>Buttons</Text>
 
@@ -120,18 +120,18 @@ class Menu2 extends Component {
                 </View>
               </View>
 
-             
-             
+
+
             </View>
           </ScrollView>
           <View style={globalStyle.footerWrapper}>
-            <TouchableHighlight style={globalStyle.footer} underlayColor='#f1f1f1'>
+            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('home');}} underlayColor='#f1f1f1'>
               <View>
                 <Image style={globalStyle.footerIcons} source={require('../Thumbnails/play-button-small.png')}/>
                 <Text style={globalStyle.footerText} > Menu1 </Text>
               </View>
             </TouchableHighlight>
-            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu2');}} underlayColor='#f1f1f1'>
+            <TouchableHighlight style={globalStyle.footer} underlayColor='#f1f1f1'>
               <View>
                 <Image style={globalStyle.footerIcons} source={require('../Thumbnails/settings-selected.png')} />
                 <Text style={[globalStyle.footerText,globalStyle.selected]} > Menu2 </Text>
