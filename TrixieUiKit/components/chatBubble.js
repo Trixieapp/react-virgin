@@ -12,7 +12,7 @@ import ReactNative, {
 } from 'react-native';
 
 
-var globalStyle = require('./style/style');
+var componentStyle = require('./style/component');
 
 class ChatBubble extends Component {
   static propTypes = {
@@ -21,8 +21,8 @@ class ChatBubble extends Component {
   render = () => {
     var text = this.props.text;
     return(
-      <View style={[globalStyle.conversationContainer,globalStyle.shadow]}>
-       <Text style= {globalStyle.conversationText}>
+      <View style={[componentStyle.conversationContainer,componentStyle.shadow]}>
+       <Text style= {componentStyle.conversationText}>
         {text}
         </Text>
       </View>

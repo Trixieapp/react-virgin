@@ -12,7 +12,7 @@ import ReactNative, {
 } from 'react-native';
 
 
-var globalStyle = require('./style/style');
+var componentStyle = require('./style/component');
 
 class ButtonBordered extends Component {
   static propTypes = {
@@ -21,9 +21,9 @@ class ButtonBordered extends Component {
   render = () => {
     var text = this.props.text;
     return(
-    <TouchableHighlight style={globalStyle.buttonBordered} underlayColor='#f1f1f1'>
+    <TouchableHighlight style={componentStyle.buttonBordered} underlayColor='#f1f1f1'>
       <View >
-        <Text style={globalStyle.buttonBorderedText}> {text} </Text>
+        <Text style={componentStyle.buttonBorderedText}> {text} </Text>
       </View>
     </TouchableHighlight>
     );

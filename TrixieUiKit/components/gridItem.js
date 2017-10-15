@@ -12,7 +12,7 @@ import ReactNative, {
 } from 'react-native';
 
 
-var globalStyle = require('./style/style');
+var componentStyle = require('./style/component');
 
 class GridItem extends Component {
   static propTypes = {
@@ -22,9 +22,9 @@ class GridItem extends Component {
     var value = this.props.value;
     var title = this.props.title;
     return(
-      <View style={[globalStyle.profileMetrics,globalStyle.shadow]}>
-        <Text  style = {globalStyle.profileValues}> {value} </Text>
-        <Text style={[globalStyle.label,globalStyle.strong,globalStyle.smallText]}> {title}</Text>
+      <View style={[componentStyle.profileMetrics,componentStyle.shadow]}>
+        <Text  style = {componentStyle.profileValues}> {value} </Text>
+        <Text style={[componentStyle.label,componentStyle.strong,componentStyle.smallText]}> {title}</Text>
       </View>
     );
   }

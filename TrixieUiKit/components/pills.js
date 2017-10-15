@@ -12,7 +12,7 @@ import ReactNative, {
 } from 'react-native';
 
 
-var globalStyle = require('./style/style');
+var componentStyle = require('./style/component');
 
 class Pills extends Component {
   static propTypes = {
@@ -22,8 +22,8 @@ class Pills extends Component {
     var text = this.props.text;
     return(
       <TouchableHighlight >
-        <View style={globalStyle.pills}>
-          <Text style={globalStyle.pillText}>
+        <View style={componentStyle.pills}>
+          <Text style={componentStyle.pillText}>
             {text}
           </Text>
         </View>
