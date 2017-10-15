@@ -19,7 +19,7 @@ class ChatBubble extends Component {
     // text: React.PropTypes.string.isRequired,
   }
   render = () => {
-    var text = this.props.text;
+    const { text } = this.props;
     return(
       <View style={[componentStyle.conversationContainer,componentStyle.shadow]}>
        <Text style= {componentStyle.conversationText}>
