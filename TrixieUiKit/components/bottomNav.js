@@ -19,7 +19,7 @@ class BottomNav extends Component {
     var activeTab = this.props.activeTab;
     var parentthis = this.props.parentthis;
     let tab1 = [
-     <TouchableHighlight style={componentStyle.footer} onPress={() => { parentthis.redirect('home');}} underlayColor='#f1f1f1'>
+     <TouchableHighlight key={1} style={componentStyle.footer} onPress={() => { parentthis.redirect('home');}} underlayColor='#f1f1f1'>
             <View>
               <Image style={componentStyle.footerIcons} source={require('../Thumbnails/play-button-small.png')}/>
               <Text style={componentStyle.footerText} > Menu1 </Text>
@@ -27,7 +27,7 @@ class BottomNav extends Component {
           </TouchableHighlight>
     ]
     let tab1Selected = [
-          <TouchableHighlight style={componentStyle.footer} underlayColor='#f1f1f1'>
+          <TouchableHighlight key={2} style={componentStyle.footer} underlayColor='#f1f1f1'>
             <View>
               <Image style={componentStyle.footerIcons} source={require('../Thumbnails/play-button-selected.png')}/>
               <Text style={[componentStyle.footerText,componentStyle.selected]} > Menu1 </Text>
@@ -35,7 +35,7 @@ class BottomNav extends Component {
           </TouchableHighlight>
           ]
     let tab2 = [
-    <TouchableHighlight style={componentStyle.footer} onPress={() => { parentthis.redirect('menu2');}} underlayColor='#f1f1f1'>
+    <TouchableHighlight key={3} style={componentStyle.footer} onPress={() => { parentthis.redirect('menu2');}} underlayColor='#f1f1f1'>
             <View>
               <Image style={componentStyle.footerIcons} source={require('../Thumbnails/settings.png')} />
               <Text style={componentStyle.footerText} > Menu2 </Text>
@@ -43,7 +43,7 @@ class BottomNav extends Component {
           </TouchableHighlight>
     ]
     let tab2Selected = [
-      <TouchableHighlight style={componentStyle.footer} underlayColor='#f1f1f1'>
+      <TouchableHighlight key={4} style={componentStyle.footer} underlayColor='#f1f1f1'>
             <View>
               <Image style={componentStyle.footerIcons} source={require('../Thumbnails/settings-selected.png')} />
               <Text style={[componentStyle.footerText,componentStyle.selected]} > Menu2 </Text>
@@ -51,7 +51,7 @@ class BottomNav extends Component {
           </TouchableHighlight>
     ]
     let tab3 = [
-     <TouchableHighlight style={componentStyle.footer} onPress={() => { parentthis.redirect('menu3');}} underlayColor='#f1f1f1'>
+     <TouchableHighlight key={5} style={componentStyle.footer} onPress={() => { parentthis.redirect('menu3');}} underlayColor='#f1f1f1'>
             <View>
               <Image style={componentStyle.footerIcons} source={require('../Thumbnails/user.png')} />
               <Text style={componentStyle.footerText} > Menu3 </Text>
@@ -59,7 +59,7 @@ class BottomNav extends Component {
           </TouchableHighlight>
     ]
     let tab3Selected = [
-       <TouchableHighlight style={componentStyle.footer} underlayColor='#f1f1f1'>
+       <TouchableHighlight key={6} style={componentStyle.footer} underlayColor='#f1f1f1'>
             <View>
               <Image style={componentStyle.footerIcons} source={require('../Thumbnails/user-selected.png')} />
               <Text style={[componentStyle.footerText,componentStyle.selected]} > Menu3 </Text>
@@ -67,7 +67,7 @@ class BottomNav extends Component {
           </TouchableHighlight>
     ]
     let tab4 = [
-       <TouchableHighlight style={componentStyle.footer} onPress={() => { parentthis.redirect('menu4');}} underlayColor='#f1f1f1'>
+       <TouchableHighlight key={7} style={componentStyle.footer} onPress={() => { parentthis.redirect('menu4');}} underlayColor='#f1f1f1'>
             <View>
               <Image style={componentStyle.footerIcons} source={require('../Thumbnails/settings.png')} />
               <Text style={componentStyle.footerText} > Menu4 </Text>
@@ -75,7 +75,7 @@ class BottomNav extends Component {
           </TouchableHighlight>
     ]
     let tab4Selected = [
-        <TouchableHighlight style={componentStyle.footer} underlayColor='#f1f1f1'>
+        <TouchableHighlight key={8} style={componentStyle.footer} underlayColor='#f1f1f1'>
             <View>
               <Image style={componentStyle.footerIcons} source={require('../Thumbnails/settings-selected.png')} />
               <Text style={[componentStyle.footerText,componentStyle.selected]} > Menu4 </Text>
