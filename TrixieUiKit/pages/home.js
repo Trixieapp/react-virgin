@@ -52,7 +52,7 @@ class Home extends Component {
           <ScrollView style={globalStyle.scrollContainer}>
           <LinearGradient style={globalStyle.header} colors={['#6F86D6','#48C6EF']} start={{x: 0.0, y: 0.25}} end={{x: 0.5, y: 1.0}}>
             <View style={globalStyle.titleContainer}>
-              <Text style={globalStyle.title}> Header 1 </Text>
+              <Text style={globalStyle.title}> List Views </Text>
             </View>
           </LinearGradient>
 

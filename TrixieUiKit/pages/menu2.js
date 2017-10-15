@@ -52,9 +52,56 @@ class Menu2 extends Component {
           <ScrollView style={globalStyle.scrollContainer}>
           <LinearGradient style={globalStyle.header} colors={['#6F86D6','#48C6EF']} start={{x: 0.0, y: 0.25}} end={{x: 0.5, y: 1.0}}>
             <View style={globalStyle.titleContainer}>
-              <Text style={globalStyle.title}> Header 2 </Text>
+              <Text style={globalStyle.title}> Components </Text>
             </View>
           </LinearGradient>
+           <View style={[globalStyle.marginTopValue,globalStyle.padding20]}>
+              
+             <View style={[globalStyle.profileCard,globalStyle.padding20]}>
+                <Text style={[globalStyle.label]}> List of all componenets used </Text>
+                 
+              </View>
+                <Text style={globalStyle.nameLeft}>Buttons</Text>
+
+                <TouchableHighlight style={globalStyle.buttonBordered} onPress={() => {this.monthlyPayment();}} underlayColor='#f1f1f1'>
+                  <View >
+                    <Text style={globalStyle.buttonBorderedText}> Bordered button </Text>
+                  </View>
+                </TouchableHighlight>
+
+
+                <TouchableHighlight style={globalStyle.buttonPrimary} onPress={() => {this.yearlyPayment();}} underlayColor='#f1f1f1'>
+                <View >
+                  <Text style={globalStyle.buttonPrimaryText}> Button primary </Text>
+                </View>
+              </TouchableHighlight>
+
+              <TouchableHighlight >
+                <View style={globalStyle.pills}>
+                  <Text style={globalStyle.pillText}>
+                    Small Button
+                  </Text>
+                </View>
+              </TouchableHighlight>
+
+               <TouchableHighlight style={[globalStyle.actionButton,globalStyle.mt10]} underlayColor='#f1f1f1'>
+                <View>
+                  <Text style= {globalStyle.actionButtonText}>Small button</Text>
+                </View>
+                </TouchableHighlight>
+
+                <Text style={globalStyle.nameLeft}>Conversation</Text>
+
+              <View style={[globalStyle.conversationContainer,globalStyle.shadow]}>
+               <Text style= {globalStyle.conversationText}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum, leo sed pharetra convallis, arcu elit tristique sem, quis ultrices nibh velit sed ante.
+                </Text>
+              </View>
+
+
+             
+             
+            </View>
           </ScrollView>
           <View style={globalStyle.footerWrapper}>
             <TouchableHighlight style={globalStyle.footer} underlayColor='#f1f1f1'>

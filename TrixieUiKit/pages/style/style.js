@@ -737,7 +737,8 @@ module.exports = StyleSheet.create({
     borderColor: primaryRed,
     borderWidth: 1,
     marginTop: 5,
-    marginRight: 5
+    marginRight: 5,
+    width: 100
   },
   pillText: {
     color: primaryRed,
@@ -825,7 +826,8 @@ module.exports = StyleSheet.create({
     borderRadius:30,
     padding: 10,
     marginRight: 10,
-    marginBottom: 10
+    marginBottom: 10,
+    width: 100
   },
   actionButtonText:{
     color:'white',
