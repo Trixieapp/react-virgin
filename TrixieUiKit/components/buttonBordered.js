@@ -1,4 +1,3 @@
-'use strict';
 import React, {
   Component,
   PropTypes
@@ -19,13 +18,13 @@ class ButtonBordered extends Component {
     // text: React.PropTypes.string.isRequired,
   }
   render = () => {
-    var text = this.props.text;
-    return(
-    <TouchableHighlight style={componentStyle.buttonBordered} underlayColor='#f1f1f1'>
-      <View >
-        <Text style={componentStyle.buttonBorderedText}> {text} </Text>
-      </View>
-    </TouchableHighlight>
+    const { text } = this.props;
+    return (
+      <TouchableHighlight style={componentStyle.buttonBordered} underlayColor='#f1f1f1'>
+        <View>
+          <Text style={componentStyle.buttonBorderedText}> {text} </Text>
+        </View>
+      </TouchableHighlight>
     );
   }
 }
