@@ -20,6 +20,7 @@ import Pills from '../components/pills';
 import PillPrimary from '../components/pillPrimary';
 import ChatBubble from '../components/chatBubble';
 import GridItem from '../components/gridItem';
+import BottomNav from '../components/bottomNav';
 var globalStyle = require('./style/style');
 class Menu2 extends Component {
   constructor(props){
@@ -98,32 +99,7 @@ class Menu2 extends Component {
 
             </View>
           </ScrollView>
-          <View style={globalStyle.footerWrapper}>
-            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('home');}} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/play-button-small.png')}/>
-                <Text style={globalStyle.footerText} > Menu1 </Text>
-              </View>
-            </TouchableHighlight>
-            <TouchableHighlight style={globalStyle.footer} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/settings-selected.png')} />
-                <Text style={[globalStyle.footerText,globalStyle.selected]} > Menu 2 </Text>
-              </View>
-            </TouchableHighlight>
-            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu3');}} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/user.png')} />
-                <Text style={globalStyle.footerText} > Menu 3 </Text>
-              </View>
-            </TouchableHighlight>
-            <TouchableHighlight style={globalStyle.footer} onPress={() => { this.redirect('menu4');}} underlayColor='#f1f1f1'>
-              <View>
-                <Image style={globalStyle.footerIcons} source={require('../Thumbnails/settings.png')} />
-                <Text style={globalStyle.footerText} > Menu 4 </Text>
-              </View>
-            </TouchableHighlight>
-          </View>
+           <BottomNav activeTab = "Menu2"/>
         </View>
       );
     }
