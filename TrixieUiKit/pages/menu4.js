@@ -38,7 +38,7 @@ class Menu4 extends Component {
     return true
   };
 
-  redirect(routeName) {
+  redirect = (routeName) => {
     const { navigate } = this.props.navigation;
     navigate(routeName)
   }
@@ -57,7 +57,7 @@ class Menu4 extends Component {
             </View>
           </LinearGradient>
           </ScrollView>
-          <BottomNav activeTab = "Menu4" parentthis={this}/>
+          <BottomNav activeTab = "Menu4" onTabPress={this.redirect}/>
         </View>
       );
     }

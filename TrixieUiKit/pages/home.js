@@ -43,7 +43,7 @@ class Home extends Component {
     return true
   };
 
-  redirect(routeName) {
+  redirect = (routeName) => {
     const { navigate } = this.props.navigation;
     navigate(routeName)
   }
@@ -118,7 +118,7 @@ class Home extends Component {
               {this.showVerticalList()}
             </View>
           </ScrollView>
-          <BottomNav activeTab = "home" parentthis={this}/>
+          <BottomNav activeTab = "home" onTabPress={this.redirect}/>
         </View>
       );
     }
