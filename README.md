@@ -20,6 +20,7 @@
   - Header
   - Gridview
   - Chat bubble
+  - Input field
   
  # Preview
 [![N|Solid](https://s3-us-west-2.amazonaws.com/trixie-public/screen.png)](http://thetrixieapp.com)
@@ -61,8 +62,8 @@ We would love if you can contribute to make this project better. Here's how you 
 ### Todos
 
  - For Android
- - Code cleanups
- - More components ( inputs, progress, profile cards and loader coming soon )
+ - More components (progress, profile cards and loader coming soon )
+ - Documentation
 
 License
 ----
