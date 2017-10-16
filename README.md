@@ -63,8 +63,8 @@ We would love if you can contribute to make this project better. Here's how you 
 ### Todos
 
  - For Android
- - Code cleanups
- - More components ( inputs, progress, profile cards and loader coming soon )
+ - More components (progress, profile cards and loader coming soon )
+ - Documentation
 
 License
 ----
