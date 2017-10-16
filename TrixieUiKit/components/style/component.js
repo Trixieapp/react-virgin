@@ -17,7 +17,7 @@ const primaryTextColor = '#444444';
 const smallTextColor = '#B2C3DB';
 const primaryRed = '#FF758C';
 const {
-  buttonPrimaryTextPadding, buttonBorderedTextPadding,
+  headerFontSize, buttonPrimaryTextPadding, buttonBorderedTextPadding,
 } = global;
 
 export default StyleSheet.create({
@@ -32,6 +32,11 @@ export default StyleSheet.create({
     alignItems: 'center',
     alignSelf: 'center',
   },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: backgroundPrimary,
+  },
   smallerButton: {
     width: 220,
   },
@@ -42,6 +47,12 @@ export default StyleSheet.create({
     backgroundColor: borderColor,
     borderRadius: 10,
     marginTop: 10,
+  },
+  title: {
+    fontSize: headerFontSize,
+    marginBottom: 20,
+    color: primaryBlue,
+    textAlign: 'center',
   },
   buttonBordered: {
     width: 270,
@@ -305,6 +316,11 @@ export default StyleSheet.create({
     fontSize: 18,
     borderRadius: 10,
     alignSelf: 'center'
+  },
+  loading: {
+    height: 75,
+    width: 75,
+    alignSelf: 'center',
   },
 
 });

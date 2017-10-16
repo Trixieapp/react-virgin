@@ -23,6 +23,7 @@
   - Header
   - Gridview
   - Chat bubble
+  - Loader
   
  # Preview
 [![N|Solid](https://s3-us-west-2.amazonaws.com/trixie-public/screen.png)](http://thetrixieapp.com)
@@ -59,11 +60,14 @@ We would love if you can contribute to make this project better. Here's how you 
  - Submit a pull request
  - Sit back and relax while our maintainers checkout your changes and approve them!
 
+### Docs
+
+Basic documentation is available on - https://trixieapp.github.io/react-virgin/
 
 ### Todos
 
  - For Android
- - More components (progress, profile cards and loader coming soon )
+ - More components (progress, profile cards coming soon )
  - Documentation
 
 License
