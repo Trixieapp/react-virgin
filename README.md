@@ -1,18 +1,21 @@
-# Trixie UI Kit
+# React-Virgin :dancer:
+## The UI Kit you've been looking for.
+
+### Made with lots of :heart: by
 
 [![N|Solid](http://thetrixieapp.com/img/hunun-logo-text.png)](http://thetrixieapp.com)
 
 [Trixie](http://thetrixieapp.com) is a meditation app chatbot to suggest you meditations based on your mood and time of the day.
 
-# What is Trixie UI Kit?
+# What is React-Virgin?
 
-  - Boiler plate UI kit for your React-Native projects
+  - Boiler plate UI kit for your React-Native projects :star:
   - Get started quickly
   - A beautiful React-Native UI kit
 
-# What is inside Trixie UI Kit?
+# What is inside React-Virgin?
 
-  - Basic Boilerplate including react-navigation
+  - Basic Boilerplate including react-navigation :boom:
   - Basic components 
   - Horizontal List
   - Vertical list
@@ -29,15 +32,14 @@
 
 ### Support
 
-Feel free to get in touch with us: support@hununapp.com
+Prefer email? Contact us at: support@hununapp.com
+Prefer livechat? Use our live chat here: http://thetrixieapp.com
 
-Or go to http://thetrixieapp.com and message us in live chat
-
-Right Now for iOS alone, Soon coming for Android.
+React-Virgin is coming soon for Android
 
 ### Installation
 
-Trixie UI kit requires [Node.js](https://nodejs.org/) v4+ to run.
+React-Virgin requires [Node.js](https://nodejs.org/) v4+ to run.
 
 Clone the repo
 
