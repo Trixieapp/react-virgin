@@ -19,7 +19,7 @@ import backAndroid, {
 import LinearGradient from 'react-native-linear-gradient';
 
 import globalStyle from './style/style';
-import BottomNav from '../components/bottomNav';
+import { BottomNav } from '../components';
 
 const createEllipses = (str) => str.length > 14 ? `${str.substring(0,11)}...` : str;
 
