@@ -1,37 +1,33 @@
 import React, {
   Component,
-  PropTypes
 } from 'react';
-import ReactNative, {
-  Image,
-  Text,
+import {
   TextInput,
-  BackHandler,
-  TouchableHighlight,
-  View
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 
 import componentStyle from './style/component';
 
 class InputField extends Component {
-  propTypes: {
-    placeholder: PropTypes.string
+  static propTypes = {
+    placeholder: PropTypes.string,
   }
 
-  defaultProps: {
+  static defaultProps = {
     placeholder: '',
   }
+
   render = () => {
     const { placeholder } = this.props;
-    return(
+    return (
       <TextInput
-        underlineColorAndroid='rgba(0,0,0,0)'
-        style={[componentStyle.inputField,componentStyle.shadow]}
-        placeholder={placeholder}>
-      </TextInput>
+        underlineColorAndroid="rgba(0,0,0,0)"
+        style={[componentStyle.inputField, componentStyle.shadow]}
+        placeholder={placeholder}
+      />
     );
   }
 }
 
-export default InputField
+export default InputField;
