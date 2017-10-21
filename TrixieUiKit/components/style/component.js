@@ -9,7 +9,7 @@ function vw(percentageWidth) {
 
 const COLUMNS = 2;
 const MARGIN = vw(1);
-const SPACING = (COLUMNS + 1) / COLUMNS * MARGIN;
+const SPACING = ((COLUMNS + 1) / COLUMNS) * MARGIN;
 const backgroundPrimary = '#F2F6FE';
 const primaryBlue = '#4990E2';
 const borderColor = '#fff';
@@ -162,7 +162,7 @@ export default StyleSheet.create({
     marginTop: MARGIN,
     borderRadius: 10,
     backgroundColor: 'white',
-    width: (vw(100) / COLUMNS - SPACING) - (2 * SPACING),
+    width: ((vw(100) / COLUMNS) - SPACING) - (2 * SPACING),
   },
   profileIcon: {
     height: 32,
@@ -312,10 +312,10 @@ export default StyleSheet.create({
     width: 270,
     marginTop: 10,
     padding: 4,
-    paddingLeft:10,
+    paddingLeft: 10,
     fontSize: 18,
     borderRadius: 10,
-    alignSelf: 'center'
+    alignSelf: 'center',
   },
   loading: {
     height: 75,

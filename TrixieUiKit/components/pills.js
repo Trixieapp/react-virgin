@@ -1,30 +1,29 @@
 import React, {
   Component,
-  PropTypes
+  PropTypes,
 } from 'react';
-import ReactNative, {
-  Image,
+import {
   Text,
-  BackHandler,
   TouchableHighlight,
-  View
+  View,
 } from 'react-native';
 
 
-var componentStyle = require('./style/component');
+const componentStyle = require('./style/component');
 
 class Pills extends Component {
-  propTypes: {
+  static propTypes = {
     text: PropTypes.string,
     onPress: PropTypes.func,
   }
-  defaultProps: {
+  static defaultProps = {
     text: '',
-    onPress: () => {}
+    onPress: () => {},
   }
+
   render = () => {
     const { text, onPress } = this.props;
-    return(
+    return (
       <TouchableHighlight onPress={onPress}>
         <View style={componentStyle.pills}>
           <Text style={componentStyle.pillText}>
@@ -36,4 +35,4 @@ class Pills extends Component {
   }
 }
 
-export default Pills
+export default Pills;

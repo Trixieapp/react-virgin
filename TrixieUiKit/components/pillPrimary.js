@@ -1,35 +1,33 @@
 import React, {
   Component,
-  PropTypes
+  PropTypes,
 } from 'react';
-import ReactNative, {
-  Image,
+import {
   Text,
-  BackHandler,
   TouchableHighlight,
-  View
+  View,
 } from 'react-native';
 
 import componentStyle from './style/component';
 
 export default class PillPrimary extends Component {
-  propTypes: {
+  static propTypes = {
     text: PropTypes.string,
   }
 
-  defaultProps: {
-    text: ''
+  static defaultProps = {
+    text: '',
   }
 
   render = () => {
     const { text } = this.props;
-    return(
+    return (
       <TouchableHighlight
-        style={[componentStyle.actionButton,componentStyle.mt10]}
-        underlayColor='#f1f1f1'
+        style={[componentStyle.actionButton, componentStyle.mt10]}
+        underlayColor="#f1f1f1"
       >
         <View>
-          <Text style= {componentStyle.actionButtonText}>{text}</Text>
+          <Text style={componentStyle.actionButtonText}>{text}</Text>
         </View>
       </TouchableHighlight>
     );

@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
+		"test": "jest",
+		"eslint": "eslint components --quiet --ext .jsx --ext .js"
 	},
 	"dependencies": {
 		"react": "16.0.0-beta.5",
@@ -14,13 +15,15 @@
 		"react-navigation": "^1.0.0-beta.13"
 	},
 	"devDependencies": {
+		"babel-eslint": "^8.0.1",
 		"babel-jest": "21.2.0",
 		"babel-preset-react-native": "4.0.0",
 		"eslint": "^4.9.0",
-		"eslint-config-airbnb": "^16.0.0",
-		"eslint-plugin-import": "^2.7.0",
+		"eslint-config-airbnb": "^16.1.0",
+		"eslint-plugin-import": "^2.8.0",
 		"eslint-plugin-jsx-a11y": "^6.0.2",
 		"eslint-plugin-react": "^7.4.0",
+		"eslint-plugin-react-native": "^3.1.0",
 		"jest": "21.2.1",
 		"react-test-renderer": "16.0.0-beta.5"
 	},

@@ -1,25 +1,23 @@
 import React, {
   Component,
-  PropTypes
+  PropTypes,
 } from 'react';
-import ReactNative, {
-  Image,
+import {
   Text,
-  BackHandler,
   TouchableHighlight,
-  View
+  View,
 } from 'react-native';
 
 
 import componentStyle from './style/component';
 
 class ButtonBordered extends Component {
-  propTypes: {
+  static propTypes = {
     text: PropTypes.string,
   }
 
-  defaultProps: {
-    text: ''
+  static defaultProps = {
+    text: '',
   }
 
   render = () => {
@@ -27,7 +25,7 @@ class ButtonBordered extends Component {
     return (
       <TouchableHighlight
         style={componentStyle.buttonBordered}
-        underlayColor='#f1f1f1'
+        underlayColor="#f1f1f1"
       >
         <View>
           <Text style={componentStyle.buttonBorderedText}> {text} </Text>
@@ -37,4 +35,4 @@ class ButtonBordered extends Component {
   }
 }
 
-export default ButtonBordered
+export default ButtonBordered;
