@@ -3,8 +3,8 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-    "precommit": "lint-staged"
-  },
+		"precommit": "lint-staged"
+	},
 	"lint-staged": {
 		"gitDir": "../",
 		"linters": {
