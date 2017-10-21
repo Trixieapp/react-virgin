@@ -4,6 +4,7 @@ node_js:
 cache:
   - yarn
 before_script:
-  - cd TrixieUiKit && yarn
+  - cd TrixieUiKit
+  - yarn
 script:
-  - cd TrixieUiKit && yarn run eslint
+  - yarn run eslint
