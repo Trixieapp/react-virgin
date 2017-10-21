@@ -1,10 +1,10 @@
 import React, {
   Component,
-  PropTypes,
 } from 'react';
 import {
   TextInput,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 
 import componentStyle from './style/component';

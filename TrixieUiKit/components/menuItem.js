@@ -1,8 +1,7 @@
 import React, {
   PureComponent,
-  PropTypes,
 } from 'react';
-
+import PropTypes from 'prop-types';
 import {
   Image,
   Text,
@@ -16,7 +15,7 @@ export default class MenuItem extends PureComponent {
   static propTypes = {
     image: PropTypes.number,
     onPress: PropTypes.func,
-    selected: PropTypes.boolean,
+    selected: PropTypes.bool,
     redirectLink: PropTypes.string,
     selectionImage: PropTypes.number,
     text: PropTypes.string,
