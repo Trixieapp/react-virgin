@@ -155,7 +155,6 @@ class Home extends Component {
             {this.showVerticalList()}
           </View>
         </ScrollView>
-        <BottomNav activeTab="home" onTabPress={this.redirect} />
       </View>
     );
   }

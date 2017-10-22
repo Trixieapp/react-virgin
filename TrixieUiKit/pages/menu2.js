@@ -103,7 +103,6 @@ class Menu2 extends Component {
 
             </View>
           </ScrollView>
-           <BottomNav activeTab = "Menu2" onTabPress={this.redirect}/>
         </View>
       );
     }
