@@ -1,5 +1,6 @@
 # React-Virgin :dancer:
-## The UI Kit you've been looking for.
+
+### The React-Native UI Kit you've been looking for
 
 ### Made with lots of :heart: by
 
@@ -34,6 +35,7 @@
 ### Support
 
 Prefer email? Contact us at: support@hununapp.com
+
 Prefer livechat? Use our live chat here: http://thetrixieapp.com
 
 React-Virgin is coming soon for Android
