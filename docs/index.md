@@ -1,18 +1,12 @@
 # Components
 
-**Bordered Button**
+**Button**
 
 ```sh
 <ButtonBordered text ="Secondary Button"/>
-```
-text property can be passed to change the text
-
-**Button Primary**
-
-```sh
 <ButtonPrimary text="Primary Button"/>
 ```
-text property can be passed to change the text
+text property can be customized to change the text that appears on the button
 
 
 **Chat Bubble**
@@ -20,16 +14,16 @@ text property can be passed to change the text
 ```sh
 <ChatBubble text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
 ```
-text property can be passed to change the text
+text property can be customized to change the text
 
 
-**Small Buttons**
+**Pills**
 
 ```sh
 <Pills text="Pill button"/>
 <PillPrimary text="Pill button"/>
 ```
-text property can be passed to change the text
+text property can be customized to change the text
 
 
 **Input field**
@@ -37,7 +31,14 @@ text property can be passed to change the text
 ```sh
 <InputField placeholder="placeholder text" />
 ```
-placeholder property can be passed to change the placeholder text
+placeholder property can be customized to change the placeholder text
+
+**Loader**
+
+```sh
+<Loader/>
+```
+
 
 
 

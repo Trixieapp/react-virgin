@@ -14,15 +14,19 @@ import backAndroid, {
   exitApp
 } from 'react-native-back-android';
 import LinearGradient from 'react-native-linear-gradient';
-import ButtonBordered from '../components/buttonBordered';
-import ButtonPrimary from '../components/buttonPrimary';
-import Pills from '../components/pills';
-import PillPrimary from '../components/pillPrimary';
-import ChatBubble from '../components/chatBubble';
-import GridItem from '../components/gridItem';
-import BottomNav from '../components/bottomNav';
+
 import globalStyle from './style/style';
-import InputField from '../components/input';
+import { 
+  BottomNav, 
+  ButtonBordered, 
+  ButtonPrimary, 
+  ChatBubble, 
+  GridItem, 
+  InputField, 
+  PillPrimary, 
+  Pills 
+} from '../components';
+
 class Menu2 extends Component {
   constructor(props){
     super(props);

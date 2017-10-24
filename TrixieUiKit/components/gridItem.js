@@ -1,37 +1,36 @@
 import React, {
   Component,
-  PropTypes
 } from 'react';
-import ReactNative, {
-  Image,
+import PropTypes from 'prop-types';
+import {
   Text,
-  BackHandler,
-  TouchableHighlight,
-  View
+  View,
 } from 'react-native';
 
 
 import componentStyle from './style/component';
 
 class GridItem extends Component {
-  propTypes: {
+  static propTypes = {
     value: PropTypes.string,
-    title: PropTypes.string
+    title: PropTypes.string,
   }
 
-  defaultProps: {
+  static defaultProps = {
     value: '',
-    title: ''
+    title: '',
   }
   render = () => {
     const { value, title } = this.props;
     return (
-      <View style={[componentStyle.profileMetrics,componentStyle.shadow]}>
-        <Text style = {componentStyle.profileValues}> {value} </Text>
-        <Text style={[componentStyle.label,componentStyle.strong,componentStyle.smallText]}> {title}</Text>
+      <View style={[componentStyle.profileMetrics, componentStyle.shadow]}>
+        <Text style={componentStyle.profileValues}> {value} </Text>
+        <Text style={[componentStyle.label, componentStyle.strong, componentStyle.smallText]}>
+          {title}
+        </Text>
       </View>
     );
   }
 }
 
-export default GridItem
+export default GridItem;

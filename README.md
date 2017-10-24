@@ -1,5 +1,6 @@
 # React-Virgin :dancer:
-## The React-Native UI Kit you've been looking for.
+
+### The React-Native UI Kit you've been looking for
 
 ### Made with lots of :heart: by
 
@@ -23,6 +24,7 @@
   - Header
   - Gridview
   - Chat bubble
+  - Loader
   
  # Preview
 [![N|Solid](https://s3-us-west-2.amazonaws.com/trixie-public/screen.png)](http://thetrixieapp.com)
@@ -36,7 +38,7 @@ Prefer email? Contact us at: support@hununapp.com
 
 Prefer livechat? Use our live chat here: http://thetrixieapp.com
 
-React-Virgin is coming soon for Android.
+React-Virgin is coming soon for Android
 
 ### Installation
 
@@ -60,11 +62,14 @@ We would love if you can contribute to make this project better. Here's how you 
  - Submit a pull request
  - Sit back and relax while our maintainers checkout your changes and approve them!
 
+### Docs
+
+Basic documentation is available on - https://trixieapp.github.io/react-virgin/
 
 ### Todos
 
  - For Android
- - More components (progress, profile cards and loader coming soon )
+ - More components (progress, profile cards coming soon )
  - Documentation
 
 License

@@ -1,4 +1,4 @@
-import ReactNative, {
+import {
   Platform
 } from 'react-native';
 

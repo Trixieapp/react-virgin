@@ -14,9 +14,9 @@ import backAndroid, {
   exitApp
 } from 'react-native-back-android';
 import LinearGradient from 'react-native-linear-gradient';
-import BottomNav from '../components/bottomNav';
 
 import globalStyle from './style/style';
+import { BottomNav } from '../components';
 
 class Menu3 extends Component {
   constructor(props){

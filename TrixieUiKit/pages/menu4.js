@@ -15,8 +15,8 @@ import backAndroid, {
 } from 'react-native-back-android';
 import LinearGradient from 'react-native-linear-gradient';
 
-import BottomNav from '../components/bottomNav';
 import globalStyle from './style/style';
+import { BottomNav, Loader } from '../components';
 
 class Menu4 extends Component {
   constructor(props){
@@ -46,16 +46,7 @@ class Menu4 extends Component {
 
   render() {
       return(
-        <View style={globalStyle.container}>
-          <ScrollView style={globalStyle.scrollContainer}>
-          <LinearGradient style={globalStyle.header} colors={['#6F86D6','#48C6EF']} start={{x: 0.0, y: 0.25}} end={{x: 0.5, y: 1.0}}>
-            <View style={globalStyle.titleContainer}>
-              <Text style={globalStyle.title}> Header 4 </Text>
-            </View>
-          </LinearGradient>
-          </ScrollView>
-          <BottomNav activeTab = "Menu4" onTabPress={this.redirect}/>
-        </View>
+        <Loader/>
       );
     }
 }
