@@ -76,6 +76,20 @@ const Menu4Stack = StackNavigator({
   }
 });
 
+const tabBarConfiguration = {
+  tabBarOptions: {
+    style: {
+      backgroundColor: 'white',
+      borderTopWidth: 0,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 3 },
+      shadowOpacity: 0.2,
+      shadowRadius: 4,
+      elevation: 1,
+    },
+  }
+};
+
 const TrixieUiKitApp = TabNavigator({
   home: {
     screen: HomeStack,
@@ -125,6 +139,6 @@ const TrixieUiKitApp = TabNavigator({
       )
     }
   }
-});
+}, tabBarConfiguration);
 
 AppRegistry.registerComponent('TrixieUiKit', () => TrixieUiKitApp);
