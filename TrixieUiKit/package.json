@@ -3,7 +3,9 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"precommit": "lint-staged"
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"precommit": "lint-staged",
+		"eslint": "eslint components --quiet --ext .jsx --ext .js"
 	},
 	"lint-staged": {
 		"gitDir": "../",
