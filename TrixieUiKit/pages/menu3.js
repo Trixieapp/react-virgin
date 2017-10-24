@@ -60,7 +60,6 @@ class Menu3 extends Component {
           </LinearGradient>
 
           </ScrollView>
-          <BottomNav activeTab = "Menu3" onTabPress={this.redirect}/>
         </View>
       );
     }
