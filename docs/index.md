@@ -36,7 +36,7 @@ placeholder property can be customized to change the placeholder text
 **Loader**
 
 ```sh
-<Loader/>
+<Loader message="Loading.."/>
 ```
 
 
