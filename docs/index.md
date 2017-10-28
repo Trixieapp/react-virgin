@@ -3,7 +3,7 @@
 **Button**
 
 ```sh
-<ButtonBordered text ="Secondary Button"/>
+<ButtonBordered text="Secondary Button"/>
 <ButtonPrimary text="Primary Button"/>
 ```
 text property can be customized to change the text that appears on the button
