@@ -67,7 +67,7 @@ class Menu2 extends Component {
            <View style={[globalStyle.marginTopValue]}>
 
              <View style={[globalStyle.profileCard,globalStyle.padding20]}>
-                <Text style={[globalStyle.label]}> List of all componenets used </Text>
+                <Text style={[globalStyle.label]}> List of all components used </Text>
               </View>
 
 
