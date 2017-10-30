@@ -75,8 +75,12 @@ Basic documentation is available on - https://trixieapp.github.io/react-virgin/
 ### Todos
 
  - For Android
- - More components (progress, profile cards coming soon )
- - Documentation
+ - Complete documentation
+ - Drawer menu
+ - Card layout
+ - Buttons with icons
+ - All form components
+ - 
 
 License
 ----
