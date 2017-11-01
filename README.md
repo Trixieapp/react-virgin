@@ -27,9 +27,9 @@
   - Loader
   
  # Preview
-[![N|Solid](https://s3-us-west-2.amazonaws.com/trixie-public/screen.png)](http://thetrixieapp.com)
+[![N|Solid](https://s3-us-west-2.amazonaws.com/trixie-public/react-virgin1.png)](http://thetrixieapp.com)
 
-[![N|Solid](https://s3-us-west-2.amazonaws.com/trixie-public/trixie-screen-2.png)](http://thetrixieapp.com)
+[![N|Solid](https://s3-us-west-2.amazonaws.com/trixie-public/react-virgin2.png)](http://thetrixieapp.com)
 
 
 ### Support
@@ -75,8 +75,12 @@ Basic documentation is available on - https://trixieapp.github.io/react-virgin/
 ### Todos
 
  - For Android
- - More components (progress, profile cards coming soon )
- - Documentation
+ - Complete documentation
+ - Drawer menu
+ - Card layout
+ - Buttons with icons
+ - All form components
+ - 
 
 License
 ----
