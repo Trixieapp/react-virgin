@@ -16,15 +16,16 @@ import backAndroid, {
 import LinearGradient from 'react-native-linear-gradient';
 
 import globalStyle from './style/style';
-import { 
-  BottomNav, 
-  ButtonBordered, 
-  ButtonPrimary, 
-  ChatBubble, 
-  GridItem, 
-  InputField, 
-  PillPrimary, 
-  Pills 
+import {
+  BottomNav,
+  ButtonBordered,
+  ButtonPrimary,
+  ChatBubble,
+  GridItem,
+  InputField,
+  PillPrimary,
+  Pills,
+  RadioButtonRound
 } from '../components';
 
 class Menu2 extends Component {
@@ -55,7 +56,7 @@ class Menu2 extends Component {
   }
 
   render = () => {
-
+      var types = [{label: 'Label1', value: 0 },{label: 'Label2', value: 1 }]
       return(
         <View style={globalStyle.container}>
           <ScrollView style={globalStyle.scrollContainer}>
@@ -100,7 +101,9 @@ class Menu2 extends Component {
                  <GridItem value="45" title = "Title" />
                  <GridItem value="55" title = "Title" />
               </View>
-
+              <View>
+                <RadioButtonRound header="Radio button header" types={types} initialValue={0}/>
+              </View>
             </View>
           </ScrollView>
         </View>

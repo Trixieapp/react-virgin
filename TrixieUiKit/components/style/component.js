@@ -322,5 +322,9 @@ export default StyleSheet.create({
     width: 75,
     alignSelf: 'center',
   },
+  centreItems: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 
 });

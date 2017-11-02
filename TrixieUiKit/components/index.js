@@ -8,3 +8,4 @@ export { default as Loader } from './loader';
 export { default as MenuItem } from './menuItem';
 export { default as PillPrimary } from './pillPrimary';
 export { default as Pills } from './pills';
+export { default as RadioButtonRound } from './radioButton';
