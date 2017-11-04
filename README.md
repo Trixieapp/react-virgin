@@ -1,4 +1,12 @@
 # React-Virgin :dancer:
+[![Travis](https://img.shields.io/travis/Trixieapp/react-virgin.svg)]()
+[![GitHub last commit](https://img.shields.io/github/last-commit/Trixieapp/react-virgin.svg)]()
+[![GitHub issues](https://img.shields.io/github/issues/Trixieapp/react-virgin.svg)](https://github.com/Trixieapp/react-virgin/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Trixieapp/react-virgin.svg)](https://github.com/Trixieapp/react-virgin/network)
+[![GitHub stars](https://img.shields.io/github/stars/Trixieapp/react-virgin.svg)](https://github.com/Trixieapp/react-virgin/stargazers)
+[![GitHub license](https://img.shields.io/github/license/Trixieapp/react-virgin.svg)](https://github.com/Trixieapp/react-virgin/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/Trixieapp/react-virgin.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FTrixieapp%2Freact-virgin)
+
 
 ### The React-Native UI Kit you've been looking for
 
