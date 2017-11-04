@@ -25,7 +25,7 @@
 # What is inside React-Virgin?
 
   - Basic Boilerplate including react-navigation :boom:
-  - Basic components 
+  - Basic components
   - Horizontal List
   - Vertical list
   - Buttons
@@ -33,12 +33,12 @@
   - Gridview
   - Chat bubble
   - Loader
-  
+
  # Preview
-[![N|Solid](https://s3-us-west-2.amazonaws.com/trixie-public/react-virgin1.png)](http://thetrixieapp.com)
 
-[![N|Solid](https://s3-us-west-2.amazonaws.com/trixie-public/react-virgin2.png)](http://thetrixieapp.com)
-
+| Android | iOS |
+| ------ | ------ |
+| ![android](https://media.giphy.com/media/l4EoMbtLTodEdPCF2/giphy.gif) | ![ios](https://media.giphy.com/media/l4EoT1RuvPfkqyNZC/giphy.gif) |
 
 ### Support
 
@@ -88,7 +88,6 @@ Basic documentation is available on - https://trixieapp.github.io/react-virgin/
  - Card layout
  - Buttons with icons
  - All form components
- - 
 
 License
 ----
