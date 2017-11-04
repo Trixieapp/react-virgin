@@ -1,14 +1,17 @@
 import React, {
-  Component
+  Component,
 } from 'react';
+import { StackNavigator, TabNavigator } from 'react-navigation';
 import { AppRegistry, Image } from 'react-native';
+
 import Home from './pages/home';
 import Menu2 from './pages/menu2';
 import Menu3 from './pages/menu3';
 import Menu4 from './pages/menu4';
 import componentStyle from './components/style/component';
-import { StackNavigator, TabNavigator } from 'react-navigation';
+import { BottomNav } from './components';
 
+/* eslint-disable global-require */
 const tabList = [
   {
     text: ' Menu1 ',
@@ -40,40 +43,28 @@ const tabList = [
   },
 ];
 
-class TrixieUiKit extends Component {
-  static navigationOptions = {
-    header: null,
-  };
-  render() {
-    const { navigation } = this.props;
-    return (
-      <Home navigation={ navigation }/>
-    );
-  }
-}
-
 const HomeStack = StackNavigator({
   Home: {
     screen: Home,
-  }
+  },
 });
 
 const Menu2Stack = StackNavigator({
   Menu2: {
     screen: Menu2,
-  }
+  },
 });
 
 const Menu3Stack = StackNavigator({
   Menu3: {
     screen: Menu3,
-  }
+  },
 });
 
 const Menu4Stack = StackNavigator({
   Menu4: {
     screen: Menu4,
-  }
+  },
 });
 
 const tabBarConfiguration = {
@@ -87,7 +78,9 @@ const tabBarConfiguration = {
       shadowRadius: 4,
       elevation: 1,
     },
-  }
+  },
+  tabBarPosition: 'bottom',
+  tabBarComponent: BottomNav
 };
 
 const TrixieUiKitApp = TabNavigator({
