@@ -46,7 +46,6 @@ Prefer email? Contact us at: support@hununapp.com
 
 Prefer livechat? Use our live chat here: http://thetrixieapp.com
 
-React-Virgin is coming soon for Android
 
 ### Installation
 
@@ -82,7 +81,6 @@ Basic documentation is available on - https://trixieapp.github.io/react-virgin/
 
 ### Todos
 
- - For Android
  - Complete documentation
  - Drawer menu
  - Card layout
