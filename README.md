@@ -1,4 +1,4 @@
-# React-Virgin :dancer:
+# React-Virgin
 [![Travis](https://img.shields.io/travis/Trixieapp/react-virgin.svg)]()
 [![GitHub last commit](https://img.shields.io/github/last-commit/Trixieapp/react-virgin.svg)]()
 [![GitHub issues](https://img.shields.io/github/issues/Trixieapp/react-virgin.svg)](https://github.com/Trixieapp/react-virgin/issues)
