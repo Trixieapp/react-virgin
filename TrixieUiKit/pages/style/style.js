@@ -1,28 +1,24 @@
-import {
-  StyleSheet,
-  Dimensions,
-} from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native'
 
 function vw(percentageWidth) {
-  return Dimensions.get('window').width * (percentageWidth / 100);
+  return Dimensions.get('window').width * (percentageWidth / 100)
 }
 
-const COLUMNS = 2;
-const MARGIN = vw(1);
-const SPACING = (COLUMNS + 1) / COLUMNS * MARGIN;
+const COLUMNS = 2
+const MARGIN = vw(1)
+const SPACING = (COLUMNS + 1) / COLUMNS * MARGIN
 
-const primaryBlue = '#4990E2';
-const titleColor = '#ffffff';
-const backgroundPrimary = '#F2F6FE';
-const borderColor = '#fff';
-const primaryTextColor = '#444444';
-const secondoryTextColor = '#D9DAE8';
-const primaryRed = '#FF758C';
+const primaryBlue = '#4990E2'
+const titleColor = '#ffffff'
+const backgroundPrimary = '#F2F6FE'
+const borderColor = '#fff'
+const primaryTextColor = '#444444'
+const secondoryTextColor = '#D9DAE8'
+const primaryRed = '#FF758C'
 
-const { headerFontSize, extraMarginValue } = global;
+const { headerFontSize, extraMarginValue } = global
 
 export default StyleSheet.create({
-
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -69,7 +65,6 @@ export default StyleSheet.create({
     elevation: 1,
     marginLeft: 15,
     marginRight: 15,
-
   },
   listMenuItem: {
     padding: 25,
@@ -257,7 +252,7 @@ export default StyleSheet.create({
     marginTop: MARGIN,
     borderRadius: 10,
     backgroundColor: 'white',
-    width: (vw(100) / COLUMNS - SPACING) - (2 * SPACING),
+    width: vw(100) / COLUMNS - SPACING - 2 * SPACING,
   },
   recentlyPlayed: {
     margin: 10,
@@ -343,8 +338,7 @@ export default StyleSheet.create({
   paddingLeftValue: {
     paddingLeft: 10,
   },
-  strong: {
-  },
+  strong: {},
   primaryBlue: {
     color: primaryBlue,
   },
@@ -381,4 +375,4 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-});
+})

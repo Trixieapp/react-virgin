@@ -5,7 +5,8 @@
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"precommit": "lint-staged",
-		"eslint": "eslint components --quiet --ext .jsx --ext .js"
+		"eslint": "eslint components --quiet --ext .jsx --ext .js",
+		"format": "prettier --config=./.prettierrc --write './pages/**/*.js'"
 	},
 	"lint-staged": {
 		"gitDir": "../",
@@ -35,6 +36,7 @@
 		"husky": "^0.14.3",
 		"jest": "21.2.1",
 		"lint-staged": "^4.3.0",
+		"prettier": "1.11.1",
 		"react-test-renderer": "16.0.0-beta.5"
 	},
 	"jest": {
