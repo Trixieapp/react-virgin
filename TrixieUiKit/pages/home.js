@@ -1,36 +1,25 @@
-import React, {
-  Component,
-} from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import {
-  Text,
-  View,
-  ScrollView,
-  Image,
-  ListView,
-  TouchableHighlight,
-} from 'react-native';
+import { Text, View, ScrollView, Image, ListView, TouchableHighlight } from 'react-native'
 
-import {
-  exitApp,
-} from 'react-native-back-android';
+import { exitApp } from 'react-native-back-android'
 
-import LinearGradient from 'react-native-linear-gradient';
+import LinearGradient from 'react-native-linear-gradient'
 
-import globalStyle from './style/style';
-import { BottomNav } from '../components';
+import globalStyle from './style/style'
+import { BottomNav } from '../components'
 
 const createEllipses = function createEllipses(str) {
-  return str.length > 14 ? `${str.substring(0, 11)}...` : str;
-};
+  return str.length > 14 ? `${str.substring(0, 11)}...` : str
+}
 
-const logo = require('../Thumbnails/logo.png');
+const logo = require('../Thumbnails/logo.png')
 
 class Home extends Component {
   static navigationOptions = {
     header: null,
-  };
+  }
 
   static propTypes = {
     navigation: PropTypes.shape({
@@ -52,29 +41,29 @@ class Home extends Component {
     },
   }
   constructor(props) {
-    super(props);
-    const dsVertical = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
-    const dsHorizonatl = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
-    this.handleBack = this.handleBack.bind(this);
+    super(props)
+    const dsVertical = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
+    const dsHorizonatl = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
+    this.handleBack = this.handleBack.bind(this)
     this.state = {
       dataSourceVertical: dsVertical.cloneWithRows(['Item 1', 'Item 2', 'Item 3']),
       dataSourceHorizontal: dsHorizonatl.cloneWithRows(['Item 4', 'Item 5', 'Item 6']),
-    };
+    }
   }
 
   handleBack() {
-    const { goBack } = this.props.navigation;
-    goBack(this.props.navigation.state.key);
+    const { goBack } = this.props.navigation
+    goBack(this.props.navigation.state.key)
   }
 
   handleHardwareBackPress = () => {
-    exitApp();
-    return true;
-  };
+    exitApp()
+    return true
+  }
 
-  redirect = (routeName) => {
-    const { navigate } = this.props.navigation;
-    navigate(routeName);
+  redirect = routeName => {
+    const { navigate } = this.props.navigation
+    navigate(routeName)
   }
 
   showHorizontalList() {
@@ -89,7 +78,7 @@ class Home extends Component {
           renderRow={(rowData, sectionID, rowID) => this.renderListRow(rowData, sectionID, rowID)}
         />
       </View>
-    );
+    )
   }
 
   showVerticalList() {
@@ -99,40 +88,36 @@ class Home extends Component {
         removeClippedSubviews={false}
         renderRow={(rowData, sectionID, rowID) => this.renderRow(rowData, sectionID, rowID)}
       />
-    );
+    )
   }
 
   /* eslint-disable class-methods-use-this */
   renderRow(rowData: string) {
-    const name = rowData;
+    const name = rowData
     return (
       <TouchableHighlight style={globalStyle.listItem} underlayColor="#f1f1f1">
         <View>
           <View style={globalStyle.row}>
             <Image style={globalStyle.thumb} source={logo} />
             <View style={globalStyle.text}>
-              <Text style={[globalStyle.name]}>
-                {name}
-              </Text>
+              <Text style={[globalStyle.name]}>{name}</Text>
             </View>
           </View>
         </View>
       </TouchableHighlight>
-    );
+    )
   }
 
   renderListRow(rowData: string) {
-    const name = rowData;
+    const name = rowData
     return (
       <TouchableHighlight underlayColor="#f1f1f1">
         <View style={globalStyle.padding10}>
           <Image style={globalStyle.recentlyPlayedThumb} source={logo} />
-          <Text style={[globalStyle.smallText, globalStyle.strong]}>
-            { createEllipses(name) }
-          </Text>
+          <Text style={[globalStyle.smallText, globalStyle.strong]}>{createEllipses(name)}</Text>
         </View>
       </TouchableHighlight>
-    );
+    )
   }
 
   render() {
@@ -156,8 +141,8 @@ class Home extends Component {
           </View>
         </ScrollView>
       </View>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home
