@@ -60,11 +60,15 @@ $ npm install
 $ react-native run-ios
 ```
 
-Linting
+### Linting
 ```
 $ yarn run eslint
 ```
-Use linter plugins for eslint on Sublime/Atom/VSCode
+We also have prettier support. Run the following after you write code to apply the prettier config.
+```
+$ yarn format
+```
+
 
 ### Development
 
