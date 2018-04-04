@@ -62,7 +62,7 @@ $ react-native run-ios
 
 ### Linting
 ```
-$ yarn run eslint
+$ yarn lint
 ```
 We also have prettier support. Run the following after you write code to apply the prettier config.
 ```
