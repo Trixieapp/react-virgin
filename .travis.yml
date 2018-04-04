@@ -7,4 +7,4 @@ before_script:
   - cd TrixieUiKit
   - yarn
 script:
-  - yarn run eslint
+  - yarn lint
