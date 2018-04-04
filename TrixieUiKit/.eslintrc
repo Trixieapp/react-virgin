@@ -1,20 +1,16 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
-  "plugins": [
-      "react",
-      "jsx-a11y",
-      "import",
-      "react-native"
-  ],
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["react", "jsx-a11y", "import", "react-native"],
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+		"react/prop-types": 0
   },
   "settings": {
-      "import/resolver": {
-          "node": {
-              "extensions": [".js", ".android.js", ".ios.js"]
-          }
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".android.js", ".ios.js"]
       }
+    }
   }
 }

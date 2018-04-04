@@ -8,7 +8,6 @@ import { exitApp } from 'react-native-back-android'
 import LinearGradient from 'react-native-linear-gradient'
 
 import globalStyle from './style/style'
-import { BottomNav } from '../components'
 
 const createEllipses = function createEllipses(str) {
   return str.length > 14 ? `${str.substring(0, 11)}...` : str
@@ -92,7 +91,7 @@ class Home extends Component {
   }
 
   /* eslint-disable class-methods-use-this */
-  renderRow(rowData: string) {
+  renderRow(rowData) {
     const name = rowData
     return (
       <TouchableHighlight style={globalStyle.listItem} underlayColor="#f1f1f1">
@@ -108,7 +107,7 @@ class Home extends Component {
     )
   }
 
-  renderListRow(rowData: string) {
+  renderListRow(rowData) {
     const name = rowData
     return (
       <TouchableHighlight underlayColor="#f1f1f1">

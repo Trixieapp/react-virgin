@@ -1,15 +1,8 @@
-import React, {
-  Component,
-} from 'react';
-import PropTypes from 'prop-types';
-import {
-  Text,
-  TouchableHighlight,
-  View,
-} from 'react-native';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Text, TouchableHighlight, View } from 'react-native'
 
-
-import componentStyle from './style/component';
+import componentStyle from './style/component'
 
 class ButtonBordered extends Component {
   static propTypes = {
@@ -21,18 +14,15 @@ class ButtonBordered extends Component {
   }
 
   render = () => {
-    const { text } = this.props;
+    const { text } = this.props
     return (
-      <TouchableHighlight
-        style={componentStyle.buttonBordered}
-        underlayColor="#f1f1f1"
-      >
+      <TouchableHighlight style={componentStyle.buttonBordered} underlayColor="#f1f1f1">
         <View>
           <Text style={componentStyle.buttonBorderedText}> {text} </Text>
         </View>
       </TouchableHighlight>
-    );
+    )
   }
 }
 
-export default ButtonBordered;
+export default ButtonBordered

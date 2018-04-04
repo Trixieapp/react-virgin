@@ -1,27 +1,21 @@
-import {
-  StyleSheet,
-  Dimensions,
-} from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native'
 
 function vw(percentageWidth) {
-  return Dimensions.get('window').width * (percentageWidth / 100);
+  return Dimensions.get('window').width * (percentageWidth / 100)
 }
 
-const COLUMNS = 2;
-const MARGIN = vw(1);
-const SPACING = ((COLUMNS + 1) / COLUMNS) * MARGIN;
-const backgroundPrimary = '#F2F6FE';
-const primaryBlue = '#4990E2';
-const borderColor = '#fff';
-const primaryTextColor = '#444444';
-const smallTextColor = '#B2C3DB';
-const primaryRed = '#FF758C';
-const {
-  headerFontSize, buttonPrimaryTextPadding, buttonBorderedTextPadding,
-} = global;
+const COLUMNS = 2
+const MARGIN = vw(1)
+const SPACING = (COLUMNS + 1) / COLUMNS * MARGIN
+const backgroundPrimary = '#F2F6FE'
+const primaryBlue = '#4990E2'
+const borderColor = '#fff'
+const primaryTextColor = '#444444'
+const smallTextColor = '#B2C3DB'
+const primaryRed = '#FF758C'
+const { headerFontSize, buttonPrimaryTextPadding, buttonBorderedTextPadding } = global
 
 export default StyleSheet.create({
-
   buttonPrimary: {
     width: 270,
     height: 50,
@@ -108,7 +102,6 @@ export default StyleSheet.create({
     backgroundColor: 'white',
     borderTopWidth: 1,
     borderTopColor: borderColor,
-
   },
   footerWrapper: {
     shadowColor: '#000',
@@ -157,7 +150,7 @@ export default StyleSheet.create({
     marginTop: MARGIN,
     borderRadius: 10,
     backgroundColor: 'white',
-    width: ((vw(100) / COLUMNS) - SPACING) - (2 * SPACING),
+    width: vw(100) / COLUMNS - SPACING - 2 * SPACING,
   },
   profileIcon: {
     height: 32,
@@ -321,5 +314,4 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-
-});
+})

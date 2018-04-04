@@ -1,15 +1,8 @@
-import React, {
-  Component,
-} from 'react';
-import PropTypes from 'prop-types';
-import {
-  Text,
-  TouchableHighlight,
-  View,
-} from 'react-native';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Text, TouchableHighlight, View } from 'react-native'
 
-
-import componentStyle from './style/component';
+import componentStyle from './style/component'
 
 class ButtonPrimary extends Component {
   static propTypes = {
@@ -21,18 +14,15 @@ class ButtonPrimary extends Component {
   }
 
   render = () => {
-    const { text } = this.props;
+    const { text } = this.props
     return (
-      <TouchableHighlight
-        style={componentStyle.buttonPrimary}
-        underlayColor="#f1f1f1"
-      >
-        <View >
+      <TouchableHighlight style={componentStyle.buttonPrimary} underlayColor="#f1f1f1">
+        <View>
           <Text style={componentStyle.buttonPrimaryText}> {text} </Text>
         </View>
       </TouchableHighlight>
-    );
+    )
   }
 }
 
-export default ButtonPrimary;
+export default ButtonPrimary

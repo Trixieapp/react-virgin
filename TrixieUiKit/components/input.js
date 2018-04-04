@@ -1,13 +1,8 @@
-import React, {
-  Component,
-} from 'react';
-import {
-  TextInput,
-} from 'react-native';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+import { TextInput } from 'react-native'
+import PropTypes from 'prop-types'
 
-
-import componentStyle from './style/component';
+import componentStyle from './style/component'
 
 class InputField extends Component {
   static propTypes = {
@@ -19,15 +14,15 @@ class InputField extends Component {
   }
 
   render = () => {
-    const { placeholder } = this.props;
+    const { placeholder } = this.props
     return (
       <TextInput
         underlineColorAndroid="rgba(0,0,0,0)"
         style={[componentStyle.inputField, componentStyle.shadow]}
         placeholder={placeholder}
       />
-    );
+    )
   }
 }
 
-export default InputField;
+export default InputField
