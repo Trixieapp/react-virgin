@@ -1,14 +1,8 @@
-import React, {
-  Component,
-} from 'react';
-import PropTypes from 'prop-types';
-import {
-  Text,
-  TouchableHighlight,
-  View,
-} from 'react-native';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Text, TouchableHighlight, View } from 'react-native'
 
-import componentStyle from './style/component';
+import componentStyle from './style/component'
 
 export default class PillPrimary extends Component {
   static propTypes = {
@@ -20,7 +14,7 @@ export default class PillPrimary extends Component {
   }
 
   render = () => {
-    const { text } = this.props;
+    const { text } = this.props
     return (
       <TouchableHighlight
         style={[componentStyle.actionButton, componentStyle.mt10]}
@@ -30,6 +24,6 @@ export default class PillPrimary extends Component {
           <Text style={componentStyle.actionButtonText}>{text}</Text>
         </View>
       </TouchableHighlight>
-    );
+    )
   }
 }

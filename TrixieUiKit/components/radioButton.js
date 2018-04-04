@@ -1,14 +1,9 @@
-import React, {
-  Component,
-} from 'react';
-import PropTypes from 'prop-types';
-import {
-  Text,
-  View,
-} from 'react-native';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Text, View } from 'react-native'
 
-import RadioForm from 'react-native-simple-radio-button';
-import componentStyle from './style/component';
+import RadioForm from 'react-native-simple-radio-button'
+import componentStyle from './style/component'
 
 class RadioButtonRound extends Component {
   static defaultProps = {
@@ -24,13 +19,12 @@ class RadioButtonRound extends Component {
   }
 
   constructor(props) {
-    super(props);
-    this.state = {
-    };
+    super(props)
+    this.state = {}
   }
 
   render = () => {
-    const { header, types, initialValue } = this.props;
+    const { header, types, initialValue } = this.props
     return (
       <View style={componentStyle.centreItems}>
         <Text> {header} </Text>
@@ -41,11 +35,13 @@ class RadioButtonRound extends Component {
           labelHorizontal={false}
           buttonColor="#2196f3"
           animation
-          onPress={(value) => { console.log(value); }}
+          onPress={value => {
+            console.log(value)
+          }}
         />
       </View>
-    );
+    )
   }
 }
 
-export default RadioButtonRound;
+export default RadioButtonRound

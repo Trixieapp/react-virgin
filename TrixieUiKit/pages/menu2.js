@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import ReactNative, { Text, View, ScrollView, Image, TouchableHighlight } from 'react-native'
-import backAndroid, { hardwareBackPress, exitApp } from 'react-native-back-android'
+import { Text, View, ScrollView } from 'react-native'
+import { exitApp } from 'react-native-back-android'
 import LinearGradient from 'react-native-linear-gradient'
 
 import globalStyle from './style/style'
 import {
-  BottomNav,
   ButtonBordered,
   ButtonPrimary,
   ChatBubble,
@@ -17,13 +16,14 @@ import {
 } from '../components'
 
 class Menu2 extends Component {
+  static navigationOptions = {
+    header: null,
+  }
+
   constructor(props) {
     super(props)
     this.handleBack = this.handleBack.bind(this)
     this.state = {}
-  }
-  static navigationOptions = {
-    header: null,
   }
 
   handleBack = () => {
@@ -32,7 +32,6 @@ class Menu2 extends Component {
   }
 
   handleHardwareBackPress = () => {
-    const { navigate } = this.props.navigation
     exitApp()
     return true
   }
@@ -43,7 +42,7 @@ class Menu2 extends Component {
   }
 
   render = () => {
-    var types = [{ label: 'Label1', value: 0 }, { label: 'Label2', value: 1 }]
+    const types = [{ label: 'Label1', value: 0 }, { label: 'Label2', value: 1 }]
     return (
       <View style={globalStyle.container}>
         <ScrollView style={globalStyle.scrollContainer}>

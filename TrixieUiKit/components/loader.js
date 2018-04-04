@@ -1,16 +1,10 @@
-import React, {
-  Component,
-} from 'react';
-import PropTypes from 'prop-types';
-import {
-  Image,
-  Text,
-  View,
-} from 'react-native';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Image, Text, View } from 'react-native'
 
-import componentStyle from './style/component';
+import componentStyle from './style/component'
 
-const loadingIcon = require('../Thumbnails/loading.gif');
+const loadingIcon = require('../Thumbnails/loading.gif')
 
 class Loader extends Component {
   static propTypes = {
@@ -24,11 +18,9 @@ class Loader extends Component {
   render = () => (
     <View style={componentStyle.container}>
       <Image style={componentStyle.loading} source={loadingIcon} />
-      <Text style={[componentStyle.title]}>
-        {this.props.message}
-      </Text>
+      <Text style={[componentStyle.title]}>{this.props.message}</Text>
     </View>
-  );
+  )
 }
 
-export default Loader;
+export default Loader

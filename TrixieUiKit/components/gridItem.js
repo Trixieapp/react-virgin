@@ -1,14 +1,8 @@
-import React, {
-  Component,
-} from 'react';
-import PropTypes from 'prop-types';
-import {
-  Text,
-  View,
-} from 'react-native';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Text, View } from 'react-native'
 
-
-import componentStyle from './style/component';
+import componentStyle from './style/component'
 
 class GridItem extends Component {
   static propTypes = {
@@ -21,7 +15,7 @@ class GridItem extends Component {
     title: '',
   }
   render = () => {
-    const { value, title } = this.props;
+    const { value, title } = this.props
     return (
       <View style={[componentStyle.profileMetrics, componentStyle.shadow]}>
         <Text style={componentStyle.profileValues}> {value} </Text>
@@ -29,8 +23,8 @@ class GridItem extends Component {
           {title}
         </Text>
       </View>
-    );
+    )
   }
 }
 
-export default GridItem;
+export default GridItem

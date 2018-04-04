@@ -1,15 +1,8 @@
-import React, {
-  PureComponent,
-} from 'react';
-import PropTypes from 'prop-types';
-import {
-  Image,
-  Text,
-  TouchableHighlight,
-  View,
-} from 'react-native';
+import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
+import { Image, Text, TouchableHighlight, View } from 'react-native'
 
-import componentStyle from './style/component';
+import componentStyle from './style/component'
 
 export default class MenuItem extends PureComponent {
   static propTypes = {
@@ -32,13 +25,11 @@ export default class MenuItem extends PureComponent {
 
   onPress = () => {
     if (!this.props.selected) {
-      this.props.onPress(this.props.redirectLink);
+      this.props.onPress(this.props.redirectLink)
     }
   }
   render = () => {
-    const {
-      text, image, selected, selectionImage,
-    } = this.props;
+    const { text, image, selected, selectionImage } = this.props
     return (
       <TouchableHighlight
         style={componentStyle.footer}
@@ -46,15 +37,10 @@ export default class MenuItem extends PureComponent {
         underlayColor="#f1f1f1"
       >
         <View>
-          <Image
-            style={componentStyle.footerIcons}
-            source={selected ? selectionImage : image}
-          />
-          <Text style={componentStyle.footerText}>
-            {text}
-          </Text>
+          <Image style={componentStyle.footerIcons} source={selected ? selectionImage : image} />
+          <Text style={componentStyle.footerText}>{text}</Text>
         </View>
       </TouchableHighlight>
-    );
+    )
   }
 }
