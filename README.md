@@ -40,11 +40,6 @@
 | ------ | ------ |
 | ![android](https://media.giphy.com/media/l4EoMbtLTodEdPCF2/giphy.gif) | ![ios](https://media.giphy.com/media/l4EoT1RuvPfkqyNZC/giphy.gif) |
 
-### Support
-
-Prefer email? Contact us at: support@hununapp.com
-
-Prefer livechat? Use our live chat here: http://thetrixieapp.com
 
 
 ### Installation
