@@ -10,9 +10,7 @@
 
 ### The React-Native UI Kit you've been looking for
 
-### Made with lots of :heart: by
-
-[![N|Solid](http://thetrixieapp.com/img/hunun-logo-text.png)](http://thetrixieapp.com)
+### Made with lots of :heart:
 
 [Trixie](http://thetrixieapp.com) is a meditation app chatbot to suggest you meditations based on your mood and time of the day.
 
