@@ -12,8 +12,6 @@
 
 ### Made with lots of :heart:
 
-[Trixie](http://thetrixieapp.com) is a meditation app chatbot to suggest you meditations based on your mood and time of the day.
-
 # What is React-Virgin?
 
   - Boiler plate UI kit for your React-Native projects :star:
