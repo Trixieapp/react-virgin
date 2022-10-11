@@ -17,7 +17,7 @@
 	"dependencies": {
 		"prop-types": "^15.6.0",
 		"react": "16.0.0-beta.5",
-		"react-native": "0.49.3",
+		"react-native": "0.70.2",
 		"react-native-back-android": "^3.1.0",
 		"react-native-linear-gradient": "^2.3.0",
 		"react-native-simple-radio-button": "^2.7.0",
